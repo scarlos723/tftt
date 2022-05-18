@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -14,13 +15,39 @@ code {
     monospace;
 }
 
-h1{
+/************ Fonts **************/
+h1,h2,h3{
   font-family: 'Cooper Hewitt';
   font-style: normal;
   font-weight: 713;
+  color: white;
+  text-align: center;
+}
+h1{
+  
   font-size: 65px;
   line-height: 84px;
   text-align: center;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+h1 span{
+  color: #F10505;
+}
+
+h2{
+  line-height: 113%;
+  text-transform: uppercase;
+  
+}
+h2 span{
+  color: #F10505;
+}
+
+h3{
+  font-size: 20px;
+  line-height: 26px;
+}
+h3 span{
+  color: #F10505;
 }

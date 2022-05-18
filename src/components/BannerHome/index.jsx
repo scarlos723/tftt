@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function BannerHome () {
   return (
-    <div>BannerHome</div>
+    <div>
+      <h1>Tales From The <span>Trap</span></h1>
+    </div>
   )
 }
