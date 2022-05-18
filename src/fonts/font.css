@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+/*font-family: 'Space Mono', monospace;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&family=Space+Mono&display=swap");
+/* font-family: 'Space Grotesk', sans-serif;*/
+
+@font-face {
+  font-family: "steinbeckregular";
+  src: url("../fonts/steinbeck_demo_regular-webfont.woff2") format("woff2"),
+    url("../fonts/steinbeck_demo_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedregular";
+  src: url("../fonts/monumentextended-regular-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "monument_extendedultrabold";
+  src: url("../fonts/monumentextended-ultrabold-webfont.woff2") format("woff2"),
+    url("../fonts/monumentextended-ultrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dx_sitrusexpanded";
+  src: url("../fonts/dxsitrus-expanded-webfont.woff2") format("woff2"),
+    url("../fonts/dxsitrus-expanded-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dx_sitrusexpanded_italic";
+  src: url("../fonts/dxsitrus-expandeditalic-webfont.woff2") format("woff2"),
+    url("../fonts/dxsitrus-expandeditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper hewitt";
+  src: url("../fonts/cooperhewitt-bold-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittbold_italic";
+  src: url("../fonts/cooperhewitt-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittbook";
+  src: url("../fonts/cooperhewitt-book-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittbook_italic";
+  src: url("../fonts/cooperhewitt-bookitalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-bookitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittheavy";
+  src: url("../fonts/cooperhewitt-heavy-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittheavy_italic";
+  src: url("../fonts/cooperhewitt-heavyitalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-heavyitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittlight";
+  src: url("../fonts/cooperhewitt-light-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittlight_italic";
+  src: url("../fonts/cooperhewitt-lightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittmedium";
+  src: url("../fonts/cooperhewitt-medium-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittmedium_italic";
+  src: url("../fonts/cooperhewitt-mediumitalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittsemibold";
+  src: url("../fonts/cooperhewitt-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittsemibold_italic";
+  src: url("../fonts/cooperhewitt-semibolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-semibolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittthin";
+  src: url("../fonts/cooperhewitt-thin-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cooper_hewittthin_italic";
+  src: url("../fonts/cooperhewitt-thinitalic-webfont.woff2") format("woff2"),
+    url("../fonts/cooperhewitt-thinitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument Extended Bold";
+  src: url("../fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monument Grotesk Semi-Mono";
+  src: url("../fonts/MonumentGrotesk-Semi-Mono.eot");
+  src: local("../fonts/Monument Grotesk Semi-Mono"),
+    local("../fonts/MonumentGrotesk-Semi-Mono"),
+    url("../fonts/MonumentGrotesk-Semi-Mono.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MonumentGrotesk-Semi-Mono.woff2") format("woff2"),
+    url("../fonts/MonumentGrotesk-Semi-Mono.woff") format("woff"),
+    url("../fonts/MonumentGrotesk-Semi-Mono.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
