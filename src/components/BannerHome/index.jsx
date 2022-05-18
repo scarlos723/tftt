@@ -7,7 +7,6 @@ export default function BannerHome () {
       <Text>
         <h1>Tales From The <span>Trap</span></h1>
       </Text>
-
     </Background>
   )
 }
