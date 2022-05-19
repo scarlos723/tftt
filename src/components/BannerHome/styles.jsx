@@ -17,7 +17,7 @@ export const Background = styled.div`
     background-position-x: center;
     background-position-y: bottom;
     height: 749.72px;
-  
+    padding-bottom: 100px;
   }
 
 `
@@ -28,4 +28,5 @@ export const Text = styled.section`
   place-items: end;
   max-width: 864px;
   margin: 0 auto;
+  
 `

@@ -56,3 +56,32 @@ button {
   background-color: #61dafb2e;
   padding: 40px;
 }
+
+/* Buttons styles */
+
+.custom-btn{
+  background: #000000;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 18px 40px 12px 40px;
+  font-family: 'cooper hewitt';
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

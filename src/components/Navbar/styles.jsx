@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: grid;
-  width: 100vw;
-  position: fixed;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 `
 export const Nav = styled.nav`
   display: grid;
@@ -15,6 +16,9 @@ export const Nav = styled.nav`
   margin-top: 52px;
   place-content: center;
   place-items: center;
+  a{
+    text-decoration: none;
+  }
   h4{
     font-family: 'cooper hewitt';
     font-style: normal;
@@ -32,12 +36,15 @@ export const Menu = styled.ul`
   align-items: center;
   list-style: none;
   li{
-    font-family: 'cooper hewitt light';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 116.5%;
-    text-transform: uppercase;
-    color: white;
+    a{
+      font-family: 'cooper hewitt light';
+      font-style: normal;
+      font-size: 16px;
+      line-height: 116.5%;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
   }
 
   

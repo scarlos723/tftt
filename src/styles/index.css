@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: black;position: relative;
 }
 
 code {
@@ -22,6 +22,7 @@ h1,h2,h3{
   font-weight: 713;
   color: white;
   text-align: center;
+  margin: 0;
 }
 h1{
   
@@ -36,6 +37,7 @@ h1 span{
 }
 
 h2{
+  font-size: 65px;
   line-height: 113%;
   text-transform: uppercase;
   
@@ -47,6 +49,7 @@ h2 span{
 h3{
   font-size: 20px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 h3 span{
   color: #F10505;
