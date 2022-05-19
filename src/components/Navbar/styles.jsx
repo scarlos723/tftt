@@ -2,23 +2,45 @@ import styled from 'styled-components'
 import { ResponsiveTo } from '@/hooks/useResponsive'
 
 export const Container = styled.div`
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  z-index: 10;
+  //padding: 35px 0;
 `
 export const Nav = styled.nav`
-  display: grid;
-  grid-template-columns: 126px 1fr 82px;
-  height: 57px;
-  width: 90%;
-  max-width: 1199px;
+  
+  display: none;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 275px;
   margin: 0 auto;
-  margin-top: 52px;
-  place-content: center;
-  place-items: center;
+  justify-content: space-between;
+  align-items: center;
+
   a{
     text-decoration: none;
+  }
+ 
+  ${ResponsiveTo('md')} {
+
+  }
+  ${ResponsiveTo('lg')} {
+    display: grid;
+    grid-template-columns: 126px 1fr 82px;
+    place-content: center;
+    place-items: center;
+    height: 57px;
+    width: 90%;
+    max-width: 1199px;
+    margin: 0 auto;
+    margin-top: 52px;
+  }
+`
+export const RightBox = styled.div`
+  img{
+    width: 21px;
+    height: 13.55px;
   }
   h4{
     font-family: 'cooper hewitt';
@@ -28,25 +50,28 @@ export const Nav = styled.nav`
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-  }
-`
-export const RightBox = styled.div`
-  img{
-    width: 21px;
-    height: 13.55px;
+    display: none;
   }
   ${ResponsiveTo('lg')}{
+    h4{
+      display: block;
+    }
     img{
       display: none;
     }
   }
 `
 export const Menu = styled.ul`
-  display: flex; 
-  flex-direction: row;
-  gap: 78px;
-  align-items: center;
+  display: none; 
+  flex-direction: column;
   list-style: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #00000064;
   li{
     a{
       font-family: 'cooper hewitt light';
@@ -58,8 +83,9 @@ export const Menu = styled.ul`
       color: white;
     }
   }
-
-  
-  
-  
+  ${ResponsiveTo('lg')}{
+    flex-direction: row;
+    gap: 78px;
+    align-items: center;
+  }
 `
