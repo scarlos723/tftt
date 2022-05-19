@@ -9,7 +9,6 @@ export const Container = styled.div`
   //padding: 35px 0;
 `
 export const Nav = styled.nav`
-
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
@@ -17,13 +16,11 @@ export const Nav = styled.nav`
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-
   a{
     text-decoration: none;
   }
  
   ${ResponsiveTo('md')} {
-
   }
   ${ResponsiveTo('lg')} {
     display: grid;

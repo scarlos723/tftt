@@ -13,46 +13,46 @@ export default function Navbar () {
     <Container>
       <Nav>
         <Link to='/'>
-          <img src={logo} alt=' logo' />
+          <img src={logo} alt=" logo" />
         </Link>
 
         <Menu>
           <li>
             <Link to='/'>
-              ABOUT TFtT
+            ABOUT TFtT
             </Link>
           </li>
           <li>
             <Link to='/'>
-              E-commerce
+            E-commerce
             </Link>
           </li>
           <li>
             <Link to='/'>
-              Producers
+            Producers
             </Link>
           </li>
           <li>
             <Link to='/'>
-              News
+            News
             </Link>
           </li>
           <li>
             <Link to='/'>
-              events
+            events
             </Link>
           </li>
           <li>
             <Link to='/'>
-              FILMCOIN
+            FILMCOIN
             </Link>
           </li>
         </Menu>
         <RightBox>
-          <img src={menuIcon} alt='' />
+          <img src={menuIcon} alt="" />
           <h4>
-            join our
-            Whitelist
+          join our
+          Whitelist
           </h4>
         </RightBox>
 

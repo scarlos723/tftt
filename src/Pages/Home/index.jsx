@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import BannerHome from '@/components/BannerHome'
 import BeInTheFilm from '@/components/BeInTheFilm'
@@ -8,6 +8,9 @@ import StepInto from '@/components/StepInto'
 import VideoSection from '@/components/VideoSection'
 
 export default function Home () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <BannerHome />
