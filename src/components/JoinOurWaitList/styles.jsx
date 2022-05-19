@@ -1,13 +1,24 @@
 import styled from 'styled-components'
 import bgImg from '@/images/home/bgJoinOurWaitList.png'
+import ResponsiveTo from '@/hooks/useResponsive'
 export const Background = styled.div`
   width: 100%;
   background: url(${bgImg});
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  height: 780px;
+  height: 466px;
+  ${ResponsiveTo('md')}{
+    height: 560px;
+  }
+  ${ResponsiveTo('lg')}{
+    height: 576px;
+  }
+  ${ResponsiveTo('xl')}{
+    height: 780px;
+  }
+  
   `
 
 export const Contain = styled.section`
