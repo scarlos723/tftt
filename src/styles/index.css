@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;position: relative;
+  background-color: black;
 }
 
 code {
@@ -52,5 +52,17 @@ h3{
   text-transform: uppercase;
 }
 h3 span{
+  color: #F10505;
+}
+p{
+  font-family: 'steinbeckregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: #FFFFFF;
+}
+p span{
   color: #F10505;
 }
