@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import { ResponsiveTo } from '@/hooks/useResponsive'
 
 export const Container = styled.div`
-  width: 200px;
+  width: 100%;
   height: 100px;
   position: fixed;
   z-index: 10;
   //padding: 35px 0;
 `
 export const Nav = styled.nav`
-  
-  display: none;
+
+  display: flex;
   flex-flow: row nowrap;
   width: 100%;
   max-width: 275px;
@@ -62,16 +62,14 @@ export const RightBox = styled.div`
   }
 `
 export const Menu = styled.ul`
-  display: none; 
+  display: flex; 
   flex-direction: column;
   list-style: none;
-  position: absolute;
   width: 100%;
   height: 100vh;
   margin: 0;
   top: 0;
   left: 0;
-  background-color: #00000064;
   li{
     a{
       font-family: 'cooper hewitt light';
