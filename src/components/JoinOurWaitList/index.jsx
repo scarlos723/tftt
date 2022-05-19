@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useCountdown } from '../../hooks/useCountdown'
 import { Background, Contain, Counter, Section } from './styles'
 
