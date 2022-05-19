@@ -81,6 +81,8 @@ module.exports = {
   devServer: {
     historyApiFallback: {
       disableDotRule: true
-    }
+    },
+    compress: true,
+    port: 3000
   }
 }
