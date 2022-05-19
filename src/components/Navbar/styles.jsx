@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { ResponsiveTo } from '@/hooks/useResponsive'
 
 export const Container = styled.div`
   width: 100%;
@@ -27,6 +28,17 @@ export const Nav = styled.nav`
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+  }
+`
+export const RightBox = styled.div`
+  img{
+    width: 21px;
+    height: 13.55px;
+  }
+  ${ResponsiveTo('lg')}{
+    img{
+      display: none;
+    }
   }
 `
 export const Menu = styled.ul`

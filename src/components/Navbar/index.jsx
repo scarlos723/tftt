@@ -1,7 +1,12 @@
-import React from 'react'
-import { Container, Menu, Nav } from './styles'
-import logo from '@/logos/logoTFTT.svg'
 import { Link } from 'react-router-dom'
+
+// Styles
+import { Container, Menu, Nav, RightBox } from './styles'
+
+// Images and Icons
+import logo from '@/logos/logoTFTT.svg'
+import menuIcon from '@/icons/navbar/menuIconMb.svg'
+
 export default function Navbar () {
   return (
     <Container>
@@ -42,11 +47,13 @@ export default function Navbar () {
             </Link>
           </li>
         </Menu>
-
-        <h4>
+        <RightBox>
+          <img src={menuIcon} alt="" />
+          <h4>
           join our
           Whitelist
-        </h4>
+          </h4>
+        </RightBox>
 
       </Nav>
     </Container>

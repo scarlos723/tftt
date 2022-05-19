@@ -3,6 +3,7 @@ import bgImg from '@/images/home/bgStepInto.png'
 import img1 from '../../assets/images/home/stepImg1.jpg'
 import img2 from '../../assets/images/home/stepImg2.jpg'
 import img3 from '../../assets/images/home/stepImg3.jpg'
+
 export const Container = styled.div`
   display: grid;
   width: 100%;
@@ -19,6 +20,7 @@ export const Container = styled.div`
     justify-content: flex-end;
   }
 `
+
 export const Grid = styled.div`
   display: grid; 
   width: 90%;
