@@ -9,7 +9,6 @@ export const Container = styled.div`
   //padding: 35px 0;
 `
 export const Nav = styled.nav`
-
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
@@ -21,7 +20,7 @@ export const Nav = styled.nav`
   a{
     text-decoration: none;
   }
- 
+
   ${ResponsiveTo('md')} {
 
   }
@@ -66,7 +65,6 @@ export const Menu = styled.ul`
   flex-direction: column;
   list-style: none;
   width: 100%;
-  height: 100vh;
   margin: 0;
   top: 0;
   left: 0;
