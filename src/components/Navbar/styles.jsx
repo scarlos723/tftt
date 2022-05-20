@@ -27,6 +27,10 @@ export const Nav = styled.nav`
 
   ${ResponsiveTo('md')} {
     max-width: 708px;
+    .img-logo{
+      width: 126px;
+      height: 57px;
+    }
   }
   ${ResponsiveTo('lg')} {
     display: grid;

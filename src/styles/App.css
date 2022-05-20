@@ -13,9 +13,13 @@
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-
+.custom-btn:hover{
+  background: #F10505;
+  border: 1px solid #ffffff00;
+}
 @media only screen and (min-width: 768px) {
   .custom-btn{
     font-size: 15px;
