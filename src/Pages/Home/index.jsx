@@ -8,9 +8,9 @@ import StepInto from '@/components/StepInto'
 import VideoSection from '@/components/VideoSection'
 
 export default function Home () {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   return (
     <div>
       <BannerHome />

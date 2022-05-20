@@ -3,30 +3,45 @@ import bgImg from '@/images/home/bgBannerHome.png'
 import { ResponsiveTo } from '@/hooks/useResponsive'
 
 export const Background = styled.div`
-  background: url(${bgImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  ${ResponsiveTo('lg')}{
-    background: linear-gradient(180deg, 
+  width: 100%;
+  display: grid;
+  background: linear-gradient(180deg, 
                   rgba(0, 0, 0, 0) 4.97%, 
                   #000000 83.77%) , url(${bgImg})
                 ; 
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  height: 320px;
+  ${ResponsiveTo('md')}{
+    height: 609px;
+  }
+  ${ResponsiveTo('lg')}{
     background-size:  100% 335px, cover;
-    background-position-x: center;
-    background-position-y: bottom;
-    height: 749.72px;
+    height: 599px;
     padding-bottom: 100px;
+  }
+  ${ResponsiveTo('xl')}{
+    height: 750px;
   }
 
 `
 export const Text = styled.section`
   display: grid;
-  height: 100%;
   place-content: end;
-  place-items: end;
-  max-width: 864px;
+  height: 100%;
+  max-width: 221px;
   margin: 0 auto;
+  h1{
+    margin: 0 auto;
+  }
+  ${ResponsiveTo('md')}{
+    max-width: 610px;
+  }
+  ${ResponsiveTo('lg')}{
+    max-width: 864px;
+    padding-bottom: 100px;
+  }
   
 `
