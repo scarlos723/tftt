@@ -22,7 +22,7 @@ export default function Navbar () {
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/aboutus'>
             ABOUT TFT<span>T</span>
             </Link>
           </li>

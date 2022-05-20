@@ -7,6 +7,7 @@ import Marketplace from './pages/Marketplace'
 import Terms from '@/pages/Terms'
 
 import '@/styles/App.css'
+import AboutUs from './pages/AboutUs'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
         <Route index element={<Home />} />
         <Route path='/marketplace' element={<Marketplace/>}/>
         <Route path='/terms' element={<Terms />} />
+        <Route path='/aboutus' element={<AboutUs />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
