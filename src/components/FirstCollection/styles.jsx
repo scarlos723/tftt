@@ -82,9 +82,6 @@ export const Article = styled.article`
   h2{
     position: relative;
     top: 70%;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffffff;
   }
   ${ResponsiveTo('md')}{
 

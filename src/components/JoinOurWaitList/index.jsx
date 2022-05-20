@@ -17,25 +17,25 @@ export default function JoinOurWaitList () {
         <Counter>
           <Section>
             <div className='box-number'>
-              <h2>
+              <h2 className='style-border'>
                 {dataCounter[0].value}
               </h2>
             </div>
             <p>{dataCounter[0].name}</p>
           </Section>
-          <h2 className='mid-dots'>:</h2>
+          <h2 className='mid-dots style-border'>:</h2>
           <Section>
             <div className='box-number'>
-              <h2>
+              <h2 className='style-border'>
                 {dataCounter[1].value}
               </h2>
             </div>
             <p>{dataCounter[1].name}</p>
           </Section>
-          <h2 className='mid-dots'>:</h2>
+          <h2 className='mid-dots style-border'>:</h2>
           <Section>
             <div className='box-number'>
-              <h2>
+              <h2 className='style-border'>
                 {dataCounter[2].value}
               </h2>
             </div>

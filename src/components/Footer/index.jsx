@@ -5,7 +5,7 @@ export default function Footer () {
   return (
     <Container>
       <Contain>
-        <h1>
+        <h1 className='style-border'>
           COMING <br /> SOON
         </h1>
         <div>

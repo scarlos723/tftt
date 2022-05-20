@@ -7,7 +7,7 @@ export default function FirstCollection () {
       <h3>FirstCollection</h3>
       <Section>
         <Article>
-          <h2>Coming Soon</h2>
+          <h2 className='style-border-white'>Coming Soon</h2>
         </Article>
         <h3>GRIME GORILLA$</h3>
         <div className='share-icon'> <img src={shareIcon} alt="" /> </div>

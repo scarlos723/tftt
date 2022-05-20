@@ -55,9 +55,7 @@ export const Counter = styled.div`
   gap: 12px;
   h2{
     margin: 0;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(241, 5, 5, 1);
+   
     }
     p{
       margin: 0;
