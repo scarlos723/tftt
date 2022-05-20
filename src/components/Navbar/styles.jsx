@@ -37,7 +37,7 @@ export const Nav = styled.nav`
     width: 90%;
     max-width: 901px;
     margin: 0 auto;
-    margin-top: 52px;
+    //margin-top: 52px;
   }
   ${ResponsiveTo('xl')} {
     max-width: 1199px;

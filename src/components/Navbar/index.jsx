@@ -27,7 +27,7 @@ export default function Navbar () {
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/marketplace'>
             E-commerce
             </Link>
           </li>
