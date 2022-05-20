@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import bgImg from '@/images/aboutus/largeBg.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
+
 export const Background = styled.div`
   position: absolute;
   background: url(${bgImg});
@@ -35,7 +36,6 @@ export const ImgContainer = styled.div`
     
     left: 0px;
   }
-
   ${ResponsiveTo('md')}{
     padding-top: 200px;
     img{
