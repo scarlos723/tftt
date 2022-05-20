@@ -59,11 +59,10 @@ export const RightBox = styled.div`
   }
 `
 export const Menu = styled.ul`
-  display: flex; 
+  display: none; 
   flex-direction: column;
   list-style: none;
   width: 100%;
-  height: 100vh;
   margin: 0;
   top: 0;
   left: 0;
