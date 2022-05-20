@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import bgImg from '@/images/home/bgJoinOurWaitList.png'
-import ResponsiveTo from '@/hooks/useResponsive'
+import { ResponsiveTo } from '@/hooks/useResponsive'
+
 export const Background = styled.div`
   width: 100%;
   background: url(${bgImg});
