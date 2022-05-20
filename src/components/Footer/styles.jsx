@@ -38,9 +38,9 @@ export const Contain = styled.section`
     line-height: 85%;
     letter-spacing: -0.02rem;
     margin: 0;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(241, 5, 5, 1);
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(241, 5, 5, 1);
   }
 
   ${ResponsiveTo('md')}{
