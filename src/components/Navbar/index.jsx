@@ -32,17 +32,17 @@ export default function Navbar () {
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/producer'>
             Producers
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/news'>
             News
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/events'>
             events
             </Link>
           </li>

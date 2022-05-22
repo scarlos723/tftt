@@ -8,6 +8,9 @@ import Terms from '@/pages/Terms'
 
 import '@/styles/App.css'
 import AboutUs from './pages/AboutUs'
+import News from './pages/News/ index'
+import Events from './pages/Events'
+import Producer from './pages/Producer'
 
 function App () {
   return (
@@ -18,6 +21,9 @@ function App () {
         <Route path='/marketplace' element={<Marketplace/>}/>
         <Route path='/terms' element={<Terms />} />
         <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/news' element={<News />} />
+        <Route path='/events' element={<Events />} />
+        <Route path='/producer' element={<Producer />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
