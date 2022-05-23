@@ -1,10 +1,12 @@
 import React from 'react'
+import { Background } from './styles'
 
 export default function BannerProducer () {
   return (
-    <div>
-
-      <h1>The producer</h1>
-    </div>
+    <Background>
+      <div>
+        <h1>The producer</h1>
+      </div>
+    </Background>
   )
 }
