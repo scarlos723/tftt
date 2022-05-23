@@ -47,7 +47,7 @@ export default function Navbar () {
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/filmcoin'>
             FILMCOIN
             </Link>
           </li>
