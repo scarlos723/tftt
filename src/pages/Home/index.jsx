@@ -6,7 +6,7 @@ import Popup from '../../components/Popup'
 import Synopsis from '../../components/Synopsis'
 import StepInto from '../../components/StepInto'
 import VideoSection from '../../components/VideoSection'
-
+import Seo from '../../components/Seo'
 export default function Home () {
   const [showPopup, setShowPopup] = useState(true)
   useEffect(() => {
@@ -15,6 +15,7 @@ export default function Home () {
 
   return (
     <div>
+      <Seo title='Home' />
       {
         showPopup && <Popup setShowPopup={setShowPopup} />
       }

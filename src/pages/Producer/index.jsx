@@ -5,6 +5,7 @@ import TerryStone from '../../components/TerryStone'
 import { Text } from '../../components/TerryStone/styles'
 import VideoSection from '../../components/VideoSection'
 import { BgFinalText, ProducerTitle } from './styles'
+import Seo from '../../components/Seo'
 
 export default function Producer () {
   useEffect(() => {
@@ -12,6 +13,7 @@ export default function Producer () {
   }, [])
   return (
     <>
+      <Seo title='Producer' />
       <BannerProducer />
       <TerryStone />
       <Richard />

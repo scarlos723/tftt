@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { BackgroundEvents, ImgContEvensts } from './styles'
 import singer from '@/images/events/singer.png'
+import Seo from '../../components/Seo'
 
 export default function Events () {
   useEffect(() => {
@@ -8,6 +9,7 @@ export default function Events () {
   }, [])
   return (
     <>
+      <Seo title='Events' />
       <ImgContEvensts>
         <img src={singer} alt="" />
       </ImgContEvensts>
