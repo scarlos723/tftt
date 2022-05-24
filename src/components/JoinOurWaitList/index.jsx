@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useCountdown } from '../../hooks/useCountdown'
 import { Background, Contain, Counter, Section } from './styles'
 
 export default function JoinOurWaitList () {
-  const [dataCounter, startTimer] = useCountdown()
+  const dataCounter = useCountdown()
   const navigate = useNavigate()
-  useEffect(() => startTimer, [])
+
   return (
     <Background>
       <Contain>
