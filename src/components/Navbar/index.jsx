@@ -52,7 +52,7 @@ export default function Navbar () {
             </Link>
           </li>
           <li className='join-text'>
-            <Link to="/">
+            <Link to="/register">
               join our
               Whitelist
             </Link>
@@ -60,10 +60,13 @@ export default function Navbar () {
         </Menu>
         <RightBox>
           <MenuIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}/>
-          <h4>
+          <Link to='/register'>
+            <h4>
           join our
           Whitelist
-          </h4>
+            </h4>
+          </Link>
+
         </RightBox>
 
       </Nav>

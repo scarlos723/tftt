@@ -4,6 +4,7 @@ import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const Container = styled.div`
   position: fixed;
+  z-index: 10;
   right: 20px;
   bottom: 80px;
   display: grid;

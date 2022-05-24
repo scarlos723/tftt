@@ -1,7 +1,9 @@
 import React from 'react'
 import { Article, Container, Section, TextBox } from './styles'
 import shareIcon from '../../assets/icons/shareIcon.svg'
+import { useNavigate } from 'react-router-dom'
 export default function FirstCollection () {
+  const navigate = useNavigate()
   return (
     <Container>
       <h3>FirstCollection</h3>
@@ -17,7 +19,9 @@ export default function FirstCollection () {
         <p>Register now in our whitelist and stay tuned for
           the launch of our first <span>NFT</span> collection</p>
 
-        <button className='custom-btn'> Register now</button>
+        <button
+          onClick={() => navigate('/register')}
+          className='custom-btn'> Register now</button>
       </TextBox>
     </Container>
   )

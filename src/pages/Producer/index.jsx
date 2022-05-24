@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BannerProducer from '../../components/BannerProducer'
 import Richard from '../../components/Richard'
 import TerryStone from '../../components/TerryStone'
@@ -7,6 +7,9 @@ import VideoSection from '../../components/VideoSection'
 import { BgFinalText, ProducerTitle } from './styles'
 
 export default function Producer () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <BannerProducer />

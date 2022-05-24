@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useCountdown } from '../../hooks/useCountdown'
 import { Background, Contain, Counter, Section } from './styles'
 
 export default function JoinOurWaitList () {
   const [dataCounter, startTimer] = useCountdown()
-
+  const navigate = useNavigate()
   useEffect(() => startTimer, [])
   return (
     <Background>
@@ -45,7 +46,9 @@ export default function JoinOurWaitList () {
         </Counter>
 
         <h3>Our first NFT drop is coming...</h3>
-        <button className='custom-btn'>register now</button>
+        <button
+          onClick={() => navigate('/register')}
+          className='custom-btn'>register now</button>
 
       </Contain>
 
