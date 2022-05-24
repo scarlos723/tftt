@@ -75,7 +75,17 @@ export const ImgContainer = styled.section`
     left: 50%;
     z-index: 2;
   }
+  .img-desktop{
+    display: none;
+  }
   ${ResponsiveTo('md')}{
+    .img-desktop{
+      display: block;
+    }
+    .img-mobile{
+      display: none;
+    }
+
     img{
       left: 0;
     }

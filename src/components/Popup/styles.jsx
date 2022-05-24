@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import bgImg from '../../assets/images/popup/bgPopup.png'
 import closeIcon from '../../assets/icons/closeIconPopup.svg'
+import { ResponsiveTo } from '../../hooks/useResponsive'
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -12,11 +14,7 @@ export const Container = styled.div`
   background: #000000a1;
 `
 export const Section = styled.section`
-  width: 60%;
-  max-width: 848px;
-  height: 477px;
-  padding: 228px 100px 120px 100px;
-  border-radius: 20px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +25,8 @@ export const Section = styled.section`
   background-position-x: center;
   background-position-y: center;
   position: relative;
+  padding: 40px 20px;
+  border-radius: 20px;
   button{
     width: 100%;
   }
@@ -40,6 +40,16 @@ export const Section = styled.section`
     background-image: url(${closeIcon});
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  ${ResponsiveTo('md')}{
+    max-width: 550px;
+    padding: 80px 40px;
+  }
+  ${ResponsiveTo('lg')}{
+    max-width: 848px;
+    height: 477px;
+    padding: 228px 100px 120px 100px;
   }
 `
 export const Text = styled.div`

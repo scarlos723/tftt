@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, ImgContainer, Textbox } from './styled'
-import girl from '@/images/filmcoin/glassGirl.png'
-import coin from '@/images/filmcoin/filmcoin.gif'
+import girl from '@/images/filmcoin/glassGirl.gif'
+import girlMb from '@/images/filmcoin/glassGirlMb.gif'
+
 export default function WeAre () {
   return (
     <Container>
@@ -13,11 +14,17 @@ export default function WeAre () {
         Token will offer its holders access to participate in Film.
         We are potentially creating life changing opportunities for our
         token holders.</p>
-        <button className='custom-btn'>Learn More</button>
+        <button
+          className='custom-btn'
+          onClick={() => {
+            window.location.href = 'https://thefilmcoin.io/#/aboutus'
+          }}>
+          Learn More
+        </button>
       </Textbox>
       <ImgContainer>
-        <img src={girl} alt="glass girl image" />
-        <img className='gif' src={coin} alt="" />
+        <img className='img-desktop' src={girl} alt="glass girl image" />
+        <img className='img-mobile' src={girlMb} alt="glass girl image" />
       </ImgContainer>
     </Container>
   )
