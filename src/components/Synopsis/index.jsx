@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextBox } from './styles'
 
-export default function Sinopsis () {
+export default function Synopsis () {
   return (
     <div>
       <TextBox>
