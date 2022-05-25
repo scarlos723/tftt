@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const TextBox = styled.div`
+  display: grid;
   width: 90%;
   max-width: 868px;
-  height: 270px;
+  height: auto;
   margin: 85px auto;
+  gap: 24px;
   p{
     span{
       strong{
@@ -27,6 +29,7 @@ export const TextBox = styled.div`
     }
   }
   ${ResponsiveTo('xl')}{
+    gap: 24px;
     h3{
     margin-bottom: 27px;
     }
