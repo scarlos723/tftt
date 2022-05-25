@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export const useCountdown = () => {
   const [timerDays, setTimerDays] = useState('00')
@@ -6,7 +6,7 @@ export const useCountdown = () => {
   const [timerMinutes, setTimerMinutes] = useState('00')
   // const [timerSeconds, setTimerSeconds] = useState(0)
 
-  let interval
+  let interval = useRef()
 
   const startTimer = () => {
     const countDownDate = new Date('May 31,2022, 08:00:00').getTime()
@@ -20,7 +20,9 @@ export const useCountdown = () => {
       const hours = Math.floor(
         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
       )
-      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60))
+      const minutes = Math.floor(
+        (distance % (60 * 60 * 1000)) / (1000 * 60)
+      )
       // const seconds = Math.floor((distance % (60 * 1000)) / 1000)
 
       if (distance < 0) {
@@ -40,15 +42,20 @@ export const useCountdown = () => {
         )
         // setTimerSeconds(seconds)
       }
-    })
+    }, 1000)
   }
-  return ([
+  useEffect(() => {
+    startTimer()
+    return () => {
+      clearInterval(interval.current)
+    }
+  })
+  return (
     [
       { name: 'Days', value: timerDays },
       { name: 'Hours', value: timerHours },
       { name: 'Minutes', value: timerMinutes }
       // { name: 'Seconds', value: timerSeconds }
-    ],
-    startTimer()]
+    ]
   )
 }

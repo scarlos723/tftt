@@ -4,21 +4,31 @@ import { ResponsiveTo } from '../../hooks/useResponsive'
 export const TextBox = styled.div`
   width: 90%;
   max-width: 868px;
+  height: 270px;
   margin: 85px auto;
   p{
-    text-align: center;
+    span{
+      strong{
+        text-shadow: 0px 0px 1px #F10505;
+      }
+    }
   }
-  h2{
-    margin-bottom: 11px;
+  h3{
+    margin-bottom: 23px;
+  }
+  ${ResponsiveTo('md')}{
+    h3{
+    margin-bottom: 31px;
+    }
   }
   ${ResponsiveTo('lg')}{
     h3{
-      margin-bottom: 25px;
+    margin-bottom: 44px;
     }
   }
   ${ResponsiveTo('xl')}{
-    h4{
-      margin-bottom: 14px;
+    h3{
+    margin-bottom: 27px;
     }
   }
 `

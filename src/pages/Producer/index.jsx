@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BannerProducer from '../../components/BannerProducer'
 import Richard from '../../components/Richard'
 import TerryStone from '../../components/TerryStone'
 import { Text } from '../../components/TerryStone/styles'
 import VideoSection from '../../components/VideoSection'
 import { BgFinalText, ProducerTitle } from './styles'
+import Seo from '../../components/Seo'
 
 export default function Producer () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
+      <Seo title='Producer' />
       <BannerProducer />
       <TerryStone />
       <Richard />

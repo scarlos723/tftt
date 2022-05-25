@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import BannerTerms from '@/components/BannerTerms'
 import { Paragraph, TermsContainer, Title } from './styles'
 
-function Terms() {
+function Terms () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <BannerTerms />

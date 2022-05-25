@@ -9,7 +9,7 @@ export default function Footer () {
           COMING <br /> SOON
         </h1>
         <div>
-          <p> DarkHorse Film Studio All Rights Reserved.</p>
+          <p> DarkHorse Film Studios All Rights Reserved.</p>
           <img src={logo} alt="" />
         </div>
       </Contain>
