@@ -13,10 +13,12 @@ export const Background = styled.div`
   height: 100vh;
   top: 0;
   ${ResponsiveTo('md')}{
+    background-position-x: center;
+    
     height: 100vh;
   }
   ${ResponsiveTo('lg')}{
-    background-position-y: top;
+    background-position-y: center;
   }
   ${ResponsiveTo('xl')}{
     height: 1029.61px;
