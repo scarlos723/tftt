@@ -10,8 +10,8 @@ const Input = forwardRef((props, ref) => {
     placeholder,
     onChange,
     onBlur,
-    error='',
-    required=false,
+    error = '',
+    required = false
   } = props
 
   return (

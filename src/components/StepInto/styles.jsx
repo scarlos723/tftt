@@ -11,21 +11,28 @@ import { ResponsiveTo } from '@/hooks/useResponsive'
 export const Container = styled.div`
   display: grid;
   width: 100%;
-  height: 820px;
+  height: 860px;
   padding-top: 100px;
   background: url(${bgImg});
-  background-size: 100%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: 330px;
   .experience-text{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: 16px;
+    width: 234px;
+    margin: 0 auto;
   }
   ${ResponsiveTo('md')}{
+    background-size: cover;
     height: 728px;
     background-position-y: 60px;
+    .experience-text{
+      width: 100%;
+    }
   }
   ${ResponsiveTo('lg')}{
     height: 952px;
