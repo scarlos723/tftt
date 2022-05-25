@@ -28,10 +28,10 @@ export const Contain = styled.section`
     place-items: center;
   }
   p{
-    font-family: 'cooper hewitt light';
-    
+    font-family: 'steinbeckregular';
     color: white;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
+    letter-spacing: -0.011em;
   }
   h1{
     font-size: 50px;
@@ -45,9 +45,16 @@ export const Contain = styled.section`
     h1{
       font-size: 100px;
     }
+    p{
+      font-size: 16px;
+    }
   }
 
   ${ResponsiveTo('lg')}{
+    p{
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
     h1{
       font-size: 124px;
     }
