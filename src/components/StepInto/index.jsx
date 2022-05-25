@@ -7,27 +7,9 @@ export default function StepInto () {
       <div>
         <h3><span>Step into the</span> trap</h3>
         <Grid>
-          <Article>
-            <div className='hover'>
-              <h3>
-                bE PART OF THE FILM
-              </h3>
-            </div>
-          </Article>
-          <Article>
-            <div className='hover'>
-              <h3>
-                Upload your music
-              </h3>
-            </div>
-          </Article>
-          <Article>
-            <div className='hover'>
-              <h3>
-                Upload your video
-              </h3>
-            </div>
-          </Article>
+          <Article />
+          <Article />
+          <Article />
         </Grid>
       </div>
       <div className='experience-text'>
