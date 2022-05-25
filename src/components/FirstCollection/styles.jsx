@@ -102,15 +102,25 @@ export const TextBox = styled.div`
   margin: 0 auto;
   gap: 8px;
   h3, p{ 
+    font-family: "steinbeckregular";
     text-align:center;
   }
   button{
+    width: 155px;
+    height: 32px;
+    margin: 0 auto;
     margin-top: 20px;
+    font-size: 13px;
+    line-height: 140%;
+    padding: 0;
   }
   ${ResponsiveTo('md')}{
     width: 610px;
+    
     button{
       width: 204px;
+      height: 46px;
+      font-size: 15px;
       margin: 0 auto;
       margin-top: 20px;
     }

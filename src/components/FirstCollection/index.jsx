@@ -21,7 +21,8 @@ export default function FirstCollection () {
 
         <button
           onClick={() => navigate('/register')}
-          className='custom-btn'> Register now</button>
+          className='custom-btn'> Register now
+        </button>
       </TextBox>
     </Container>
   )
