@@ -14,7 +14,9 @@ export default defineConfig({
       '@/icons': path.resolve(__dirname, './src/assets/icons/'),
       '@/context': path.resolve(__dirname, './src/context/'),
       '@/routes': path.resolve(__dirname, './src/routes/'),
-      '@/hooks': path.resolve(__dirname, './src/hooks/')
+      '@/hooks': path.resolve(__dirname, './src/hooks/'),
+      '@/services': path.resolve(__dirname, './src/services/'),
+      '@/utils': path.resolve(__dirname, './src/utils/')
     }
   },
   plugins: [react()]
