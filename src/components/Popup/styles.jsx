@@ -55,4 +55,5 @@ export const Section = styled.section`
 export const Text = styled.div`
   display: grid;
   margin-bottom: 50px;
+  gap: 22px;
 `
