@@ -188,8 +188,7 @@ export const Menu = styled.ul`
     left: -539px  `};
   }
   ${ResponsiveTo('lg')}{
-    padding: 0;
-    padding-right:  44px;
+    padding: 0 20px;
     display: flex;
     flex-flow: row nowrap;
     gap: 44px;

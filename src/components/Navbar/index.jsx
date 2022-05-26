@@ -51,7 +51,7 @@ export default function Navbar () {
             FILMCOIN
             </Link>
           </li>
-          <li className='join-text'>
+          <li className='join-text cursor-pointer'>
             <Link to="/register">
               join our
               Whitelist
@@ -59,11 +59,13 @@ export default function Navbar () {
           </li>
         </Menu>
         <RightBox>
-          <MenuIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}/>
+          <div className='cursor-pointer'>
+            <MenuIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}/>
+          </div>
           <Link to='/register'>
-            <h4>
-          join our
-          Whitelist
+            <h4 className='cursor-pointer'>
+              join our
+              Whitelist
             </h4>
           </Link>
 
