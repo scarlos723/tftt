@@ -10,7 +10,7 @@ export default function Popup (props) {
         <div onClick={() => props.setShowPopup(false)} className='close-btn' />
         <Text>
           <h2>Join our whitelist</h2>
-          <h3><span>Firsts Nft drop coming soon!</span></h3>
+          <h3>Firsts Nft drop coming soon!</h3>
         </Text>
         <button onClick={() => navigate('/register')} className='custom-btn'>Register</button>
       </Section>

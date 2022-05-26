@@ -10,7 +10,7 @@ export default function JoinOurWaitList () {
   return (
     <Background>
       <Contain>
-        <div>
+        <div className='titles'>
           <h3><span> Don’t miss any details! </span></h3>
           <h2>Join our whitelist today</h2>
         </div>

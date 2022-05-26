@@ -2,6 +2,25 @@ import styled from 'styled-components'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 export const Container = styled.div`
   margin-top: 64px;
+  h3{
+    margin-bottom: 16px;
+  }
+  ${ResponsiveTo('md')}{
+    h3{
+      margin-bottom: 37px;
+    }
+  }
+  ${ResponsiveTo('lg')}{
+    h3{
+      margin-bottom: 40px;
+    }
+  }
+  ${ResponsiveTo('xl')}{
+    h3{
+      margin-bottom: 47px;
+    }
+  }
+
 `
 export const Section = styled.section`  
   display: grid; 
@@ -50,10 +69,19 @@ export const Article = styled.article`
   height: 179px;
   background: #545454;
   border-radius: 10px;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
   ${ResponsiveTo('md')}{
     width: 166.03px;
     height: 255.81px;
     border-radius: 20px;
+    img{
+      border-radius: 20px;
+    }
   }
   ${ResponsiveTo('lg')}{
     width: 239.24px;

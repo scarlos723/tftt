@@ -16,11 +16,13 @@ export const Background = styled.div`
   height: 320px;
   ${ResponsiveTo('md')}{
     height: 609px;
+    background-position-y: 120px, bottom;
   }
   ${ResponsiveTo('lg')}{
     background-size:  100% 335px, cover;
     height: 599px;
     padding-bottom: 100px;
+    background-position-y: bottom;
   }
   ${ResponsiveTo('xl')}{
     height: 750px;
@@ -38,6 +40,7 @@ export const Text = styled.section`
   }
   ${ResponsiveTo('md')}{
     max-width: 610px;
+    padding-bottom: 91px;
   }
   ${ResponsiveTo('lg')}{
     max-width: 864px;

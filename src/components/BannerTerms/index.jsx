@@ -1,6 +1,6 @@
 import { BannerTermsContainer } from './styles'
 
-function BannerTerms() {
+function BannerTerms () {
   return (
     <BannerTermsContainer />
   )

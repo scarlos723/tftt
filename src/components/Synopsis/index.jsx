@@ -11,6 +11,9 @@ export default function Synopsis () {
         Estates. Tales of Gang Culture, Fashion, Music, Knife & Gun Crime,
         County Lines Drug Deals, however more than that &#34;TALES FROM THE TRAP&#34; is
         a story of Friendship and Loyalty that runs deeper than any Family.
+
+        </p>
+        <p>
         Slick is a rising star in the UK Rap & Drill Music scenes as
         part of the SE8 crew who are tearing up the music scene, however
         with a rise in success also comes a rise in status and all the dangers

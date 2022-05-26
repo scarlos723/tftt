@@ -6,7 +6,9 @@ import {
   RowButton,
   Section
 } from './styles'
-
+import movie1 from '@/images/marketplace/movie1.png'
+import movie2 from '@/images/marketplace/movie2.png'
+import movie3 from '@/images/marketplace/movie3.png'
 export default function TopDrops () {
   return (
     <Container>
@@ -16,9 +18,9 @@ export default function TopDrops () {
       <Section>
         <RowButton> &lt; </RowButton>
         <CardsContainer>
-          <Article />
-          <Article />
-          <Article />
+          <Article ><img src={movie1} alt="movie1" /></Article>
+          <Article ><img src={movie2} alt="movie1" /></Article>
+          <Article ><img src={movie3} alt="movie1" /></Article>
         </CardsContainer>
         <RowButton> &gt; </RowButton>
       </Section>

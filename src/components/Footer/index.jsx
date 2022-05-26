@@ -13,7 +13,6 @@ export default function Footer () {
           <img src={logo} alt="" />
         </div>
       </Contain>
-
     </Container>
   )
 }
