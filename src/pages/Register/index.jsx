@@ -1,9 +1,13 @@
+import { useEffect } from 'react'
 import Banner from '@/components/BannerRegister'
 import Form from '@/components/FormRegister'
 import Stepper from '@/components/Stepper'
 import Seo from '@/components/Seo'
 
 function Register() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <main>
       <Seo
