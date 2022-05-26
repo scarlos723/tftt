@@ -62,21 +62,12 @@ export const CheckboxContainer = styled.div`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled.button.attrs({className: 'custom-btn'})`
   width: 100%;
-  background: #000000;
-  border: 1px solid #FFFFFF;
   border-radius: 6px;
-  font-family: 'Cooper Hewitt';
-  font-style: normal;
-  font-weight: 713;
-  font-size: 13px;
-  line-height: 17px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
   padding: 10px 0;
   ${ResponsiveTo('md')} {
+    border-radius: 10px;
     font-size: 20px;
     line-height: 140%;
   }
