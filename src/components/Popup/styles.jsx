@@ -29,6 +29,7 @@ export const Section = styled.section`
   border-radius: 20px;
   button{
     width: 100%;
+    max-width: 240px;
   }
   .close-btn{
     position: absolute;
@@ -45,15 +46,47 @@ export const Section = styled.section`
   ${ResponsiveTo('md')}{
     max-width: 550px;
     padding: 80px 40px;
+    button{
+      max-width: 428px;
+    }
   }
   ${ResponsiveTo('lg')}{
     max-width: 848px;
-    height: 477px;
-    padding: 228px 100px 120px 100px;
+    height: 545px;
+    padding: 38px 100px 62px 100px;
+    button{
+      max-width: 476px;;
+    }
+  }
+  ${ResponsiveTo('xl')}{
+    button{
+      max-width: 631px;
+    }
   }
 `
 export const Text = styled.div`
+  position: relative;
+  z-index: 1;
   display: grid;
   margin-bottom: 50px;
   gap: 22px;
+`
+export const Image = styled.div`
+  position:relative;
+  margin-bottom: -50px;
+  z-index: 0;
+  width: 200px;
+  height: 216px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  ${ResponsiveTo('md')}{
+    width: 212.33px;
+    height: 228px;
+  }
+  ${ResponsiveTo('lg')}{
+    width: 312.33px;
+  height: 328px;
+  }
 `

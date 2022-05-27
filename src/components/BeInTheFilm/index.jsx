@@ -6,7 +6,7 @@ export default function BeInTheFilm () {
     <div>
       <TextBox>
         <h2>Be in the film</h2>
-        <p><span>Register to be part of the team, in “TALES FROM THE TRAP” you can upload your own videos and get special VIP treatment for registering.</span></p>
+        <p>Register to be part of the team, in “TALES FROM THE <span>TRAP</span>” you can upload your own videos and get special VIP treatment for registering.</p>
       </TextBox>
     </div>
   )
