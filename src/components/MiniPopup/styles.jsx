@@ -13,14 +13,19 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-position-y: center;
-  padding: 28px 17px 14px 17px;
+  background-position-y: top;
+  padding: 8px 0 12px 0;
   width: 117px;
-  height: 119px;
+  height: auto;
   border-radius: 8px;
   section{
     display: grid;
-    gap: 10px;
+  }
+  .gorilla-img{
+    width: 63.16px;
+    height: 66px;
+    margin: 0 auto;
+    margin-bottom: -10px;
   }
   h3{
     font-size: 13px;
@@ -36,7 +41,11 @@ export const Container = styled.div`
   ${ResponsiveTo('md')}{
     width: 209px;
     height: 120px;
-    padding:22px 30px;
+    padding:16px 0;
+    .gorilla-img{
+      width: 62.85px;
+      height: 66px;
+    }
     h3{
       font-size: 15px;
     }
@@ -45,9 +54,14 @@ export const Container = styled.div`
       font-size: 12px;
     }
   }
+  
   ${ResponsiveTo('xl')}{
     width: 229px;
     height: 157px;
+    .gorilla-img{
+      width: 89px;
+      height: 93px;
+    }
     h3{
       font-size: 20px;
       }
