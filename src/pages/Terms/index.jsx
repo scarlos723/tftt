@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import BannerTerms from '@/components/BannerTerms'
+import Seo from '@/components/Seo'
 import { Paragraph, TermsContainer, Title } from './styles'
 
 function Terms () {
@@ -8,9 +9,10 @@ function Terms () {
   }, [])
   return (
     <>
+      <Seo title='Terms and conditions' />
       <BannerTerms />
       <TermsContainer>
-        <Title>term and conditions</Title>
+        <Title>terms and conditions</Title>
         <Paragraph>
           <h2>Consent</h2>
           By accessing the website(s) and any other platform or web or mobile app (the “Website”) maintained by Darkhorse Film Limited, a company registered in the United Kingdom / London and its parent, sister and operating companies (the “Group Of Companies”, “Darkhorse”, “we”, “us” “our”), you are registering to receive our alerts or updates, corresponding with us and/or using our services, you agree to be bound by the Darkhorse terms of use, privacy policy and cookie policy (the “Terms”). If you do not accept these Terms in full or are not capable of providing your consent under applicable law, you should immediately discontinue access to the Site and use of our services, and opt out of our alerts and updates. These Terms are subject to any other terms and

@@ -6,6 +6,7 @@ import Home from '@/pages/Home'
 import Marketplace from './pages/Marketplace'
 import Terms from '@/pages/Terms'
 import Register from '@/pages/Register'
+import Success from '@/pages/Success'
 import AboutUs from './pages/AboutUs'
 import News from './pages/News/ index'
 import Events from './pages/Events'
@@ -29,6 +30,7 @@ function App () {
         <Route path='/events' element={<Events />} />
         <Route path='/producer' element={<Producer />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/success' element={<Success />} />
         <Route path='/filmcoin' element={<Filmcoin />} />
       </Routes>
       <Footer/>

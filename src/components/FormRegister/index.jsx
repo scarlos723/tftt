@@ -6,28 +6,28 @@ import registerSchema from './schema'
 import Checkbox from '@/components/Checkbox'
 import removeProperties from '@/utils/removeProperties'
 import registerService from '@/services/register'
+import { useNavigate } from 'react-router-dom'
 
 
 function FormRegister() {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const goTo = useNavigate()
+  const { register, handleSubmit, formState: { errors } } = useForm({
     mode: 'all',
     resolver: yupResolver(registerSchema)
   })
 
-  const onSubmitHandler = data => {
+  const onSubmitHandler = async data => {
     try {
       // Remove unnecessary properties from data
       const user = removeProperties(
         data,
         data.phone ? ['terms'] : ['phone', 'terms']
       )
-      console.log(user)
-      const result = registerService(user)
-      console.log(result)
+      await registerService(user)
+      goTo('/success')
     } catch (error) {
       console.log(error)
     }
-    reset()
   }
 
   return (
