@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import bgImg from '../../assets/images/marketplace/bgFirstCollection.png'
 import articleImg from '../../assets/images/marketplace/articleImg.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
+import shadow from '../../assets/images/marketplace/shadow.png'
+
 export const Container = styled.div`
   width: 100%;
   height: 513px;
@@ -71,29 +73,76 @@ export const Section = styled.section`
     }
   }
 `
-export const Article = styled.article`
+export const Box = styled.div`
   width: 100%;
-  height: 188.76px;
+  height: 120px;
   background: url(${articleImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
-  h2{
-    position: relative;
-    top: 70%;
+  position: relative;
+  .comming{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      background-image: url(${shadow});
+      background-repeat: no-repeat;
+      background-size: contain; 
+      background-position-y: 100%;
+      width: 100%;
+      height: 100%;
   }
   ${ResponsiveTo('md')}{
-
+    height: 256.25px;
   }
 
   ${ResponsiveTo('lg')}{
     height: 268.15px;
   }
   ${ResponsiveTo('xl')}{
-    height: 313px;
+    max-width: 1026px;
+    height: auto;
+    .comming{
+      height: 297px;
+    }
   }
 `
+export const Grid = styled.div`
+  display: grid;
+  height: 120px;
+  grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
+  place-items: end;
+  position: relative;
+  padding-bottom: 18px;
+  article{
+    h3{
+      opacity: 0;
+      transition: all 0.3s;
+      padding: 0;
+    }
+    img{
+      width: 100%;
+    }
+    &:hover{
+      h3{
+        opacity: 1;
+        }
+      }
+    } 
+    ${ResponsiveTo('md')}{
+      height: 256.25px;
+      padding-bottom: 38px;
+    }
+    ${ResponsiveTo('lg')}{
+
+    }
+    ${ResponsiveTo('xl')}{
+
+    } 
+  `
 export const TextBox = styled.div`
   display: flex;
   flex-flow: column nowrap;
