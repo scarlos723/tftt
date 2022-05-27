@@ -26,23 +26,26 @@ export const Container = styled.div`
     width: 234px;
     margin: 0 auto;
   }
+  margin-bottom: -180px;
   ${ResponsiveTo('md')}{
     background-size: cover;
     height: 728px;
-    background-position-y: 60px;
+    background-position-y: 0px;
     .experience-text{
       width: 100%;
     }
+    margin-bottom: -80px;
   }
   ${ResponsiveTo('lg')}{
     height: 952px;
-    background-size: 1280px 1191px;
-    background-position-y: -100px;
+    background-size: cover;
+    margin-bottom: -180px;
   }
   ${ResponsiveTo('xl')}{
     height: 1191px;
-    background-size: cover;
-    background-position-y: 100px;
+    background-size: cover
+    ;
+    background-position-y: 0;
   }
 `
 

@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { ResponsiveTo } from '@/hooks/useResponsive'
+
 export const Container = styled.div`
+  position: relative;
+  z-index: 5;
   width: 100%;
   height: 256px;
   ${ResponsiveTo('md')}{
@@ -11,7 +14,7 @@ export const Container = styled.div`
     height: 388px;
   }
   ${ResponsiveTo('xl')}{
-    height: 596px;
+    height: auto;
   }
 `
 export const Contain = styled.section`
@@ -23,6 +26,10 @@ export const Contain = styled.section`
   align-items: center;
   max-width: 706px;
   margin: 0 auto;
+  h1, div{
+    position: relative;
+    z-index: 1;
+  }
   div{
     display: grid;
     place-items: center;
@@ -65,4 +72,37 @@ export const Contain = styled.section`
       font-size: 144px;
     }
   }
+`
+export const ImgTFTT = styled.div`
+  display: grid;
+  position: relative;
+  z-index: 0;
+  width: 123px;
+  height: 64px;
+  margin-bottom: -20px;
+  img{
+    width: 100%;
+  }
+  .fade-img{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+  }
+  ${ResponsiveTo('md')}{
+    width: 211px;
+    height: 110px;
+    margin-bottom: -40px;
+  }
+  ${ResponsiveTo('lg')}{
+    width: 285px;
+    height: 148px;
+    margin-bottom: -50px;
+  }
+  ${ResponsiveTo('xl')}{
+    width: 429px;
+    height: 222px;
+    margin-bottom: -70px;
+  }
+
 `
