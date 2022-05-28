@@ -8,13 +8,9 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 110px;
-  margin: 2.25rem auto 0;
+  margin: 0 auto;
   ${ResponsiveTo('md')} {
     max-width: 122px;
-    margin-top: 3.5rem;
-  }
-  ${ResponsiveTo('xl')} {
-    margin-top: 4.625rem;
   }
 `
 
@@ -27,7 +23,7 @@ export const Step = styled.div`
       border: 1px solid rgba(255, 255, 255, 0.5);
       background: rgba(0, 0, 0, 0.7);
     `
-    : css`background-color: #F10505;`
+    : css`background-color: #0E8C0D;`
   }
   &:not(:last-child)::after {
     content: '';

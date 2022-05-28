@@ -1,6 +1,6 @@
-import { Container, Paragraph, Subtitle, Title } from "./styles"
+import { Container, Subtitle, Title } from "./styles"
 
-function BannerRegister({ children, showParagraph=true }) {
+function BannerRegister({ children }) {
   return (
     <Container>
       <Title>
@@ -9,12 +9,6 @@ function BannerRegister({ children, showParagraph=true }) {
       <Subtitle>
         Join Our Whitelist
       </Subtitle>
-      {showParagraph && (
-        <Paragraph>
-          Register to be part of the team, in TALES FROM THE
-          <strong> TRAP</strong> and stay updated
-        </Paragraph>
-      )}
       {children}
     </Container>
   )

@@ -21,7 +21,7 @@ export const Label = styled.label`
   margin-bottom: 0.75rem;
   ${fonts}
   & > input:checked ~ span {
-    background-color: #F10505;
+    background-color: #0E8C0D;
     border: none;
     padding: 0.25rem;
   }
