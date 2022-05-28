@@ -47,10 +47,10 @@ export const Form = styled.form`
 `
 
 export const TermsLink = styled(Link)`
-  color: #F10505;
+  color: #0E8C0D;
   text-decoration: none;
   &:hover, &:focus, &:active, &:visited {
-    color: #F10505;
+    color: #0E8C0D;
   }
 `
 

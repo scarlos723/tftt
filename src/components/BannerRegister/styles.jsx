@@ -34,7 +34,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-  color: #F10505;
+  color: #0E8C0D;
   font-size: 13px;
   line-height: 17px;
   margin-bottom: 2.125rem;
@@ -46,19 +46,5 @@ export const Subtitle = styled.h2`
   ${ResponsiveTo('xl')} {
     font-size: 20px;
     line-height: 26px;
-  }
-`
-
-export const Paragraph = styled.p`
-  text-align: center;
-  max-width: 240px;
-  margin: 0 auto;
-  strong {
-    color: #F10505;
-    font-weight: 400;
-  }
-  ${ResponsiveTo('md')} {
-    font-size: 13px;
-    max-width: 25rem;
   }
 `
