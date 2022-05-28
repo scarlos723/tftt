@@ -39,7 +39,7 @@ export default function FirstCollection () {
 
           </Grid>
           <div className='comming'>
-            <h2 className='style-border-white'>Coming Soon</h2>
+            <h2 className='style-border-white'>Welcome</h2>
           </div>
         </Box>
         <h3>WELCOME TO THE GRIME GORILLA$ NFT COLLECTION</h3>

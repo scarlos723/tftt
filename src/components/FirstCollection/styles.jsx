@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import bgImg from '../../assets/images/marketplace/bgFirstCollection.png'
 import articleImg from '../../assets/images/marketplace/articleImg.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
-import shadow from '../../assets/images/marketplace/shadow.png'
 
 export const Container = styled.div`
   width: 100%;
@@ -88,25 +87,30 @@ export const Box = styled.div`
       align-items: flex-end;
       position: absolute;
       bottom: 0;
-      background-image: url(${shadow});
-      background-repeat: no-repeat;
+      background: linear-gradient(179.66deg, rgba(217, 217, 217, 0) 0.3%, rgba(0, 0, 0, 0.67) 51.55%);
       background-size: contain; 
       background-position-y: 100%;
       width: 100%;
-      height: 100%;
+      height: 40px;
   }
   ${ResponsiveTo('md')}{
     height: 256.25px;
+    .comming{
+      height: 80px;
+    }
   }
 
   ${ResponsiveTo('lg')}{
-    height: 268.15px;
+    height: 369.25px;
+    .comming{
+      height: 100px;
+    }
   }
   ${ResponsiveTo('xl')}{
     max-width: 1026px;
-    height: auto;
+    height: 431px;
     .comming{
-      height: 297px;
+      height: 120px;
     }
   }
 `
@@ -116,11 +120,12 @@ export const Grid = styled.div`
   grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
   place-items: end;
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 24px;
   article{
+    
     h3{
       opacity: 0;
-      transition: all 0.3s;
+      transition: all 0.5s;
       padding: 0;
     }
     img{
@@ -137,11 +142,17 @@ export const Grid = styled.div`
       padding-bottom: 38px;
     }
     ${ResponsiveTo('lg')}{
-
+      height: 369.25px; 
+      padding-bottom: 38px;
+      article{
+        h3{
+          font-size: 15px;
+        }
+      }
     }
     ${ResponsiveTo('xl')}{
-
-    } 
+      padding-bottom: 0;
+    }   
   `
 export const TextBox = styled.div`
   display: flex;
@@ -151,8 +162,15 @@ export const TextBox = styled.div`
   margin: 0 auto;
   gap: 8px;
   h3, p{ 
-    font-family: "steinbeckregular";
+   
     text-align:center;
+  }
+  h3{
+    font-family: "cooper hewitt";
+    font-size: 13px;
+  }
+  p{
+    font-family: "steinbeckregular";
   }
   button{
     width: 155px;
@@ -173,13 +191,20 @@ export const TextBox = styled.div`
       margin: 0 auto;
       margin-top: 20px;
     }
+    h3{
+      font-size: 15px;
+    }
     p{ 
       font-size: 14px;
     }
   }
 
+
   ${ResponsiveTo('xl')}{
-    width: 866px;;
+    width: 866px;
+    h3{
+      font-size: 20px;
+    }
     button{
       width: 320px;
     }
