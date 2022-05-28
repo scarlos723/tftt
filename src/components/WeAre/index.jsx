@@ -15,7 +15,7 @@ export default function WeAre () {
         We are potentially creating life changing opportunities for our
         token holders.</p>
         <button
-          className='custom-btn'
+          className='custom-btn hover-btn-filmcoin'
           onClick={() => {
             window.location.href = 'https://thefilmcoin.io/#/aboutus'
           }}>

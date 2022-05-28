@@ -22,6 +22,10 @@
   border: 1px solid #ffffff00;
 }
 
+.hover-btn-filmcoin:hover{
+  background: #12D466;
+  border: 1px solid #ffffff00;
+}
 .style-border{
   color: transparent;
   -webkit-text-stroke-width: 2px;
