@@ -7,7 +7,7 @@ export default function Richard () {
     <ContainerRichard>
       <img src={imgRichard} alt="richard image" />
       <Text>
-        <h3><span>richard</span></h3>
+        <h3><span>richard turner</span></h3>
         <p>
         Richard has worked in the Film Industry since 1982
         and has produced, executive produced and controlled
