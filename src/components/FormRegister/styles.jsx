@@ -21,7 +21,7 @@ export const Container = styled.div`
   ${ResponsiveTo('xl')} {
     padding: 5rem 13.5rem 24rem;
     max-width: 1300px;
-    margin: -14rem auto -20rem;
+    margin: -10rem auto -20rem;
   }
 `
 

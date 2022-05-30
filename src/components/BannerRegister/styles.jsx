@@ -29,7 +29,7 @@ export const Title = styled.h1`
   ${ResponsiveTo('xl')} {
     font-size: 65px;
     line-height: 84px;
-    margin-top: 6rem;
+    margin-top: 25rem;
   }
 `
 
