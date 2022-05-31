@@ -43,13 +43,11 @@ export default function FirstCollection () {
           </div>
         </Box>
         <h3>WELCOME TO THE GRIME GORILLA$ NFT COLLECTION</h3>
-
       </Section>
       <TextBox>
         <h3><span>Don’t miss any detail!</span></h3>
         <p>Register now in our whitelist and stay tuned for
           the launch of our first <span>NFT</span> collection</p>
-
         <button
           onClick={() => navigate('/register')}
           className='custom-btn'> Register now
