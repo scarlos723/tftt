@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import bgImg from '../../assets/images/popup/bgPopup.png'
 import closeIcon from '../../assets/icons/closeIconPopup.svg'
 import { ResponsiveTo } from '../../hooks/useResponsive'
+import gorillas from '../../assets/images/popup/gorillas.png'
+
 
 export const Container = styled.div`
   display: flex;
@@ -71,22 +73,20 @@ export const Text = styled.div`
   margin-bottom: 50px;
   gap: 22px;
 `
-export const Image = styled.div`
-  position:relative;
-  margin-bottom: -50px;
+export const Image = styled.img.attrs({
+  src: gorillas,
+  role: 'presentation',
+  alt: 'Gorillas NFTs Collection'
+})`
+  margin-bottom: -0.4rem;
   z-index: 0;
   width: 200px;
-  height: 216px;
-  img{
-    width: 100%;
-    height: 100%;
-  }
+  height: auto;
   ${ResponsiveTo('md')}{
-    width: 212.33px;
-    height: 228px;
+    width: 420px;
+    margin-bottom: -0.85rem;
   }
   ${ResponsiveTo('lg')}{
-    width: 312.33px;
-  height: 328px;
+    width: 476px;
   }
 `

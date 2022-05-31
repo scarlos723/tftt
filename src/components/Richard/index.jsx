@@ -13,12 +13,12 @@ export default function Richard () {
         and has produced, executive produced and controlled
         the finances for more than 60 productions often from
         initial development to final delivery. He is a completion
-        guarantor-recognised producer and financial controller.&#34;
+        guarantor-recognised producer and financial controller.
         </p>
         <p>
-          &#34;Richard and Terry have been working together as Producing
-          Partners for the past decade and have created, developed,directed
-          and produced a slate of films, documentaries & Television Series,
+          Richard and Terry have been working together as Producing
+          Partners for the past decade and have created, developed, directed
+          and produced a slate of films, documentaries &amp; Television Series,
           some of which have had wide cinema releases and Worldwide releases on
           Netflix and Amazon.
         </p>
