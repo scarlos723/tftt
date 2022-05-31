@@ -11,6 +11,7 @@ import gorilla5 from '../../assets/images/marketplace/gorilla5.png'
 export default function FirstCollection () {
   const navigate = useNavigate()
   return (
+    // coment for load.env
     <Container>
       <h3>FirstCollection</h3>
       <Section>
@@ -43,13 +44,11 @@ export default function FirstCollection () {
           </div>
         </Box>
         <h3>WELCOME TO THE GRIME GORILLA$ NFT COLLECTION</h3>
-
       </Section>
       <TextBox>
         <h3><span>Don’t miss any detail!</span></h3>
         <p>Register now in our whitelist and stay tuned for
           the launch of our first <span>NFT</span> collection</p>
-
         <button
           onClick={() => navigate('/register')}
           className='custom-btn'> Register now
