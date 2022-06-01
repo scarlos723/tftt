@@ -12,10 +12,6 @@ export default function StepInto () {
           <Article />
         </Grid>
       </div>
-      {/* <div className='experience-text'>
-        <h2>Experience the <span>trap</span></h2>
-        <h3><span>From the inside out</span></h3>
-      </div> */}
     </Container>
   )
 }
