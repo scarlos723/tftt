@@ -22,13 +22,19 @@ export const Container = styled.div`
     display: grid;
   }
   .gorilla-img{
-    width: 63.16px;
-    height: 66px;
-    margin: 0 auto;
-    margin-bottom: -10px;
+    width: 91.81px;
+    height: 93px;
+    margin-left: 20px;
+    margin-bottom: -40px;
+  }
+  .gorilla-group{
+    display: none;
   }
   h3{
     font-size: 13px;
+    br{
+      display: none;
+    }
   }
   button{
     font-size: 10px;
@@ -37,14 +43,22 @@ export const Container = styled.div`
     border-radius: 5px;
     padding: 0;
     margin: 0 auto;
+    margin-top: 4px;
   }
   ${ResponsiveTo('md')}{
     width: 209px;
     height: 120px;
     padding:16px 0;
     .gorilla-img{
-      width: 62.85px;
-      height: 66px;
+      display: none;
+      
+    }
+    .gorilla-group{
+      display: block;
+      width: 164.11px;
+      height: 78px;
+      margin: 0 auto;
+      margin-bottom: -20px;
     }
     h3{
       font-size: 15px;
@@ -62,10 +76,20 @@ export const Container = styled.div`
       width: 89px;
       height: 93px;
     }
+    .gorilla-group{
+      width: 195.67px;
+      height: 93px;
+     
+      margin-bottom: -40px;
+    }
     h3{
       font-size: 20px;
+      br{
+        display: block;
       }
+    }
     button{
+    
       width: 168px;
     } 
   }

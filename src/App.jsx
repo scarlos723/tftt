@@ -21,7 +21,7 @@ function App () {
   const [gradient, setGradient] = useState(false)
   useEffect(() => {
     document.addEventListener('scroll', e => {
-      console.log('scroll', window.scrollY)
+      // console.log('scroll', window.scrollY)
       if (window.scrollY > 32) {
         setGradient(true)
       } else {
