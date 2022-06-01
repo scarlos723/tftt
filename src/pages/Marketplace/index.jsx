@@ -13,8 +13,8 @@ export default function Marketplace () {
       <Seo title='Marketplace' />
       <BannerMarket />
       <h2>TFT<span>T</span> COLLECTION</h2>
-      <TopDrops />
       <FirstCollection />
+      <TopDrops />
     </div>
   )
 }
