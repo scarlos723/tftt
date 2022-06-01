@@ -7,10 +7,11 @@ import { Container, Menu, MenuIcon, Nav, RightBox } from './styles'
 // Images and Icons
 import logo from '@/logos/logoTFTT.svg'
 import textLogo from '@/logos/textLogo.svg'
-export default function Navbar () {
+export default function Navbar (props) {
   const [isOpen, setIsOpen] = React.useState(false)
+
   return (
-    <Container>
+    <Container gradient={props.gradient}>
       <Nav>
         <Link to='/'>
           <img className='img-logo' src={logo} alt=" logo" />

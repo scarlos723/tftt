@@ -23,9 +23,28 @@ export default function TopDrops () {
       </Title>
       <Section>
         <CardsContainer>
-          <Article ><img src={picture1} alt="picture singer man" /></Article>
-          <Article ><img src={picture2} alt="picture singer girls" /></Article>
-          <Article ><img src={picture3} alt="picture man in to scene" /></Article>
+          <Article >
+            <img src={picture1} alt="picture singer man" />
+            <div className="hover">
+              <h3>purchase a <br /> roll in the film</h3>
+            </div>
+          </Article>
+          <Article >
+            <img src={picture2} alt="picture singer girls" />
+            <div className="hover">
+              <h3>
+                purchase the opportunity to walk in the red carpet
+              </h3>
+            </div>
+          </Article>
+          <Article >
+            <img src={picture3} alt="picture man in to scene" />
+            <div className="hover">
+              <h3>
+                purchase the opportunity to meet the cast members
+              </h3>
+            </div>
+          </Article>
         </CardsContainer>
 
       </Section>

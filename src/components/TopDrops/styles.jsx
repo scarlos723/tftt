@@ -157,11 +157,30 @@ export const Article = styled.article`
   height: 179px;
   background: #545454;
   border-radius: 10px;
+  position: relative;
   img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+  }
+  .hover{
+    display: none;
+  }
+  &:hover{
+    .hover{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 3, 3, 0.85);
+    }
   }
   ${ResponsiveTo('md')}{
     width: 166.03px;
