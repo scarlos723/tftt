@@ -8,6 +8,17 @@ export const Container = styled.div`
   position: fixed;
   z-index: 10;
   padding: 35px 0;
+  background: transparent;
+  transition: all 2s;
+
+  ${props => props.gradient
+    ? css`
+    background: linear-gradient(180deg, #000000 0%, rgba(0,0,0,0.7) 35%, rgba(0,212,255,0) 100%);
+    `
+    : css`
+    background: transparent;
+    `
+}
 `
 export const Nav = styled.nav`
   display: flex;

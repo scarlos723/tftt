@@ -1,30 +1,26 @@
 import styled from 'styled-components'
-import bgImg from '../../assets/images/marketplace/bgFirstCollection.png'
+
 import articleImg from '../../assets/images/marketplace/articleImg.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const Container = styled.div`
   width: 100%;
-  height: 513px;
-  background: url(${bgImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: top;
-  background-position-x: center;
+  height: auto;
   margin-top: 65px;
   ${ResponsiveTo('md')}{
-    height: 768px;
+    
     margin-top: 81px;
+    padding-bottom: 10px;
   }
   ${ResponsiveTo('lg')}{
     margin-top: 0;
     padding-top: 144px;
-    height: 900px;
+    padding-bottom: 20px;
+    
     background-position-y: bottom;
   }
   ${ResponsiveTo('xl')}{
     padding-top: 244px;
-    height: 1080px;
     background-position-y: center;
   }
 `
@@ -116,14 +112,16 @@ export const Box = styled.div`
 `
 export const Grid = styled.div`
   display: grid;
+  width: 100%;
   height: 120px;
-  grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
+  grid-template-columns:  1fr 1.3fr 1fr;
   place-items: end;
   position: relative;
-  padding-bottom: 24px;
   article{
+    position: relative;
     
     h3{
+      display: none;
       opacity: 0;
       transition: all 0.5s;
       padding: 0;
@@ -137,79 +135,28 @@ export const Grid = styled.div`
         }
       }
     } 
-    ${ResponsiveTo('md')}{
-      height: 256.25px;
-      padding-bottom: 38px;
+    .hidden-mb{
+      display: none;
     }
-    ${ResponsiveTo('lg')}{
-      height: 369.25px; 
-      padding-bottom: 38px;
-      article{
-        h3{
-          font-size: 15px;
-        }
+  ${ResponsiveTo('md')}{
+    grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
+    height: 256.25px;
+    padding-bottom: 38px;
+    .hidden-mb{
+      display: block;
+    }
+  }
+  ${ResponsiveTo('lg')}{
+    height: 369.25px; 
+    padding-bottom: 38px;
+    article{
+      h3{
+        display: block;
+        font-size: 15px;
       }
     }
-    ${ResponsiveTo('xl')}{
-      padding-bottom: 0;
-    }   
-  `
-export const TextBox = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  
-  width: 236px;
-  margin: 0 auto;
-  gap: 8px;
-  h3, p{ 
-   
-    text-align:center;
   }
-  h3{
-    font-family: "cooper hewitt";
-    font-size: 13px;
-  }
-  p{
-    font-family: "steinbeckregular";
-  }
-  button{
-    width: 155px;
-    height: 32px;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 13px;
-    line-height: 140%;
-    padding: 0;
-  }
-  ${ResponsiveTo('md')}{
-    width: 610px;
-    
-    button{
-      width: 204px;
-      height: 46px;
-      font-size: 15px;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-    h3{
-      font-size: 15px;
-    }
-    p{ 
-      font-size: 14px;
-    }
-  }
-
-
   ${ResponsiveTo('xl')}{
-    width: 866px;
-    h3{
-      font-size: 20px;
-    }
-    button{
-      width: 320px;
-    }
-    p{
-      font-size: 16px;
-    }
-  }
-`
+    padding-bottom: 0;
+  }   
+  `

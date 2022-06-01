@@ -15,13 +15,25 @@ import MiniPopup from './components/MiniPopup'
 import Filmcoin from './pages/Filmcoin'
 
 import '@/styles/App.css'
+import { useEffect, useState } from 'react'
 
 function App () {
+  const [gradient, setGradient] = useState(false)
+  useEffect(() => {
+    document.addEventListener('scroll', e => {
+      console.log('scroll', window.scrollY)
+      if (window.scrollY > 32) {
+        setGradient(true)
+      } else {
+        setGradient(false)
+      }
+    })
+  }, [])
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar gradient={gradient}/>
       <MiniPopup />
-      <Routes>
+      <Routes >
         <Route index element={<Home />} />
         <Route path='/marketplace' element={<Marketplace/>}/>
         <Route path='/terms' element={<Terms />} />
@@ -33,6 +45,7 @@ function App () {
         <Route path='/success' element={<Success />} />
         <Route path='/filmcoin' element={<Filmcoin />} />
       </Routes>
+
       <Footer/>
     </BrowserRouter>
   )
