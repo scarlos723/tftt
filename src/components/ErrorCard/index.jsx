@@ -1,18 +1,20 @@
 import React from 'react'
-import { Button, CartIcon, CheckIcon, Container, Paragraph, Title } from '../SuccessfulCard/styles'
-
+import { Button, Container, Paragraph, Title } from '../SuccessfulCard/styles'
+import wrongIcon from '@/icons/error/wrong.svg'
+import { WrongIcon } from './styles'
 export default function ErrorCard () {
   return (
 
     <Container>
-      <CheckIcon />
+      <WrongIcon>
+        <img src={wrongIcon} alt="" />
+      </WrongIcon>
       <Title>
         Oops, something went <span>wrong</span>
       </Title>
       <Paragraph>
         Try again, and check everything is fine!
       </Paragraph>
-      <CartIcon />
       <Button to='/register'>
         Return to registration page
       </Button>

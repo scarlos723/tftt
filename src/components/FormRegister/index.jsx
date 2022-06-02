@@ -8,8 +8,7 @@ import removeProperties from '@/utils/removeProperties'
 import registerService from '@/services/register'
 import { useNavigate } from 'react-router-dom'
 
-
-function FormRegister() {
+function FormRegister () {
   const goTo = useNavigate()
   const { register, handleSubmit, formState: { errors } } = useForm({
     mode: 'all',
@@ -27,6 +26,7 @@ function FormRegister() {
       goTo('/success')
     } catch (error) {
       console.log(error)
+      goTo('/errorpage')
     }
   }
 

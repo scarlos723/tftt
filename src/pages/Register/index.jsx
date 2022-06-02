@@ -4,7 +4,7 @@ import Form from '@/components/FormRegister'
 import Stepper from '@/components/Stepper'
 import Seo from '@/components/Seo'
 
-function Register() {
+function Register () {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

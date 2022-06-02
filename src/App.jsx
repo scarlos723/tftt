@@ -16,6 +16,7 @@ import Filmcoin from './pages/Filmcoin'
 
 import '@/styles/App.css'
 import { useEffect, useState } from 'react'
+import ErrorPage from './pages/ErrorPage'
 
 function App () {
   const [gradient, setGradient] = useState(false)
@@ -44,6 +45,7 @@ function App () {
         <Route path='/register' element={<Register />} />
         <Route path='/success' element={<Success />} />
         <Route path='/filmcoin' element={<Filmcoin />} />
+        <Route path='/errorpage' element={<ErrorPage />} />
       </Routes>
 
       <Footer/>
