@@ -1,6 +1,6 @@
-import { Button, CartIcon, CheckIcon, Container, Paragraph, Title } from "./styles"
+import { Button, CartIcon, CheckIcon, Container, Paragraph, Title } from './styles'
 
-function SuccessfulCard() {
+function SuccessfulCard () {
   return (
     <Container>
       <CheckIcon />

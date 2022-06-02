@@ -10,7 +10,7 @@ export default function Popup (props) {
         <Image />
         <Text>
           <h2>Join our whitelist</h2>
-          <h3>Firsts Nft drop <span>coming soon!</span></h3>
+          <h3>First Nft drop <span>coming soon!</span></h3>
         </Text>
         <button onClick={() => navigate('/register')} className='custom-btn'>Register</button>
       </Section>

@@ -166,6 +166,7 @@ export const Article = styled.article`
   }
   .hover{
     display: none;
+    transition: all 0.3s;
   }
   &:hover{
     .hover{

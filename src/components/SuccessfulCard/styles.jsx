@@ -96,4 +96,3 @@ export const Button = styled(Link).attrs({
     border-radius: 4px;
   }
 `
-

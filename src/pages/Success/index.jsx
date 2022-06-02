@@ -4,7 +4,7 @@ import Stepper from '@/components/Stepper'
 import Seo from '@/components/Seo'
 import SuccessfulCard from '@/components/SuccessfulCard'
 
-function Success() {
+function Success () {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
