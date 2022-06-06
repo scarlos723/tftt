@@ -1,21 +1,12 @@
 import React from 'react'
-import { Background, Container, FormSesion, InputContaier } from './styles'
+import { Background, Container, FormSesion, InputContaier, Table } from './styles'
 import useLogin from '@/hooks/useLogin'
 
 export default function Dashboard () {
-  const [isLoged, setIsLoged] = React.useState(false)
-  const [loading, dataUsers, sendCredentials] = useLogin()
+  const [isLoged, loading, dataUsers, sendCredentials] = useLogin()
   // eslint-disable-next-line no-unused-vars
 
   // eslint-disable-next-line no-unused-vars
-
-  const InfoContainer = () => {
-    return (
-      <h1>
-        Aqui va la info
-      </h1>
-    )
-  }
 
   const LoginForm = () => {
     const [dataInputs, setDataInputs] = React.useState({
@@ -32,10 +23,8 @@ export default function Dashboard () {
     function handlerLogin (e) {
       e.preventDefault()
       console.log('Login')
-      setIsLoged(true)
       sendCredentials(dataInputs)
     }
-
     return (
       <div>
         <h1>Use your credentials to access</h1>
@@ -65,19 +54,44 @@ export default function Dashboard () {
       </div>
     )
   }
+
+  const TableOfUsers = (props) => {
+    return (
+      <div>
+        {
+          loading
+            ? <h3>loading</h3>
+            : <Table>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              {props.data.users.map(user => {
+                return (
+                  <tr>
+                    <td>{user.email}</td>
+                    <td>{user.firstname}</td>
+                    <td>{user.wallet}</td>
+                  </tr>
+                )
+              })}
+            </Table>
+        }
+      </div>
+
+    )
+  }
+
   return (
     <Background>
       <Container>
         {
-          isLoged
-            ? <InfoContainer />
-            : <LoginForm />
+          !isLoged
+            ? <LoginForm />
+            : <TableOfUsers data={dataUsers} />
         }
-        {
-          loading
-            ? <h3>loading</h3>
-            : <h3>{`esta es la data:${dataUsers.users}`}</h3>
-        }
+
       </Container>
     </Background>
   )

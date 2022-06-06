@@ -42,3 +42,9 @@ export const InputContaier = styled.div`
     height: 32px;
   }
 `
+export const Table = styled.table`
+  border: white 1px solid;
+  tr,th,td{
+    color: white;
+  }
+`

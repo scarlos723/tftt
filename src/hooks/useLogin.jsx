@@ -5,7 +5,7 @@ export default function login () {
   const API_BASE_URL = import.meta.env.VITE_REGISTER_API
 
   const [loading, setLoading] = React.useState(false)
-
+  const [isLoged, setIsLoged] = React.useState(false)
   const [dataUsers, setDataUsers] = React.useState({})
 
   const loginApi = axios.create({
@@ -18,19 +18,11 @@ export default function login () {
 
   })
 
-  function checkToeknStorage () {
-    const token = localStorage.getItem('token')
-    if (token) {
-      return token
-    } else {
-      return null
-    }
-  }
-
   async function sendCredentials (credentials) {
     const token = localStorage.getItem('tokenTFTT')
 
     if (token) {
+      setIsLoged(true)
       getUsers(token)
     } else {
       setLoading(true)
@@ -43,6 +35,7 @@ export default function login () {
           setLoading(false)
           console.log('esta es la respuesta', response)
           localStorage.setItem('tokenTFTT', response.data.token)
+          setIsLoged(true)
           getUsers(response.data.token)
         }
       } catch (error) {
@@ -76,5 +69,5 @@ export default function login () {
     }
   }
 
-  return [loading, dataUsers, sendCredentials]
+  return [isLoged, loading, dataUsers, sendCredentials]
 }
