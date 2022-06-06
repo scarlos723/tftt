@@ -56,6 +56,7 @@ export default function Dashboard () {
   }
 
   const TableOfUsers = (props) => {
+    console.log('los datos son ', props.data)
     return (
       <div>
         {
