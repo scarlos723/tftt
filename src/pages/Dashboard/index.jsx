@@ -69,15 +69,19 @@ export default function Dashboard () {
                 <th>Country</th>
                 <th>{props.data}</th>
               </tr>
-              {/* {props.data.users.map(user => {
-                return (
-                  <tr>
-                    <td>{user.email}</td>
-                    <td>{user.firstname}</td>
-                    <td>{user.wallet}</td>
-                  </tr>
-                )
-              })} */}
+              {
+
+                props.data.users.map((user, index) => {
+                  return (
+                    <tr key={index}>
+                      <td>{user.email}</td>
+                      <td>{user.firstname}</td>
+                      <td>{user.wallet}</td>
+                    </tr>
+                  )
+                })
+
+              }
             </Table>
         }
       </div>
