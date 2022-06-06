@@ -92,7 +92,9 @@ export default function Dashboard () {
       <TableContainer>
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
-
+          <h3>
+            Descargar reporte CSV
+          </h3>
           {
             csvReport &&
             <div style={{ display: 'grid', background: 'gray' }}>
