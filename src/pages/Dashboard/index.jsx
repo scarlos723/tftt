@@ -67,8 +67,9 @@ export default function Dashboard () {
                 <th>Company</th>
                 <th>Contact</th>
                 <th>Country</th>
+                <th>{props.data}</th>
               </tr>
-              {props.data.users.map(user => {
+              {/* {props.data.users.map(user => {
                 return (
                   <tr>
                     <td>{user.email}</td>
@@ -76,7 +77,7 @@ export default function Dashboard () {
                     <td>{user.wallet}</td>
                   </tr>
                 )
-              })}
+              })} */}
             </Table>
         }
       </div>

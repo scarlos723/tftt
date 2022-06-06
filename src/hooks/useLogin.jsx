@@ -57,7 +57,9 @@ export default function login () {
         Authorization: `Bearer ${token}`
       }
     })
+
     setLoading(true)
+
     try {
       const response = await getInfoApi.get('/infouser?page=1&limit=0')
       if (response) {
