@@ -63,9 +63,8 @@ export default function Dashboard () {
     return (
       <div>
 
-        <h3 style={loading ? { display: 'block' } : { display: 'none' }} >loading</h3>
-
-        <div style={!loading ? { display: 'block' } : { display: 'none' }}> Este es el numero de users
+        <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
+        <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           {/* {props.data.users.length} */}
           <Table>
             <tr>
