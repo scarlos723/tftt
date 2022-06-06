@@ -6,7 +6,10 @@ export default function login () {
 
   const [loading, setLoading] = React.useState(false)
   const [isLoged, setIsLoged] = React.useState(false)
-  const [dataUsers, setDataUsers] = React.useState('no data')
+  const [dataUsers, setDataUsers] = React.useState({
+    msg: ' ',
+    users: []
+  })
 
   const loginApi = axios.create({
     baseURL: API_BASE_URL,
