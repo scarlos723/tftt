@@ -27,11 +27,11 @@ export default function login () {
       })
       if (response) {
         setLoading(false)
-        console.log(response)
-        getUsers(response.data.token)
+        console.log('esta es la respuesta', response)
+        // getUsers(response.data.token)
       }
     } catch (error) {
-      console.log(error)
+      console.log('ocurrio un error', error)
       setLoading(false)
     }
   }
