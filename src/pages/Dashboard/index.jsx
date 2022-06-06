@@ -67,7 +67,7 @@ export default function Dashboard () {
   const TableOfUsers = (props) => {
     const csvReport = {
       data: props.data,
-      headers,
+      headers: HEADERS_DOC,
       filename: 'TFTT_users_eport.csv'
     }
     useEffect(() => {
@@ -79,7 +79,7 @@ export default function Dashboard () {
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           {/* {props.data.users.length} */}
           <div>
-            <csvlink {...csvReport}>Export to CSV</csvlink>
+            <CSVLink {...csvReport}>Export to CSV</CSVLink>
           </div>
           <Table>
             <tr>
