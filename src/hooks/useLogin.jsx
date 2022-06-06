@@ -6,7 +6,7 @@ export default function login () {
 
   const [loading, setLoading] = React.useState(false)
   const [isLoged, setIsLoged] = React.useState(false)
-  const [dataUsers, setDataUsers] = React.useState({})
+  const [dataUsers, setDataUsers] = React.useState('no data')
 
   const loginApi = axios.create({
     baseURL: API_BASE_URL,
@@ -65,7 +65,7 @@ export default function login () {
       if (response) {
         setLoading(false)
         console.log('response in get users', response)
-        setDataUsers(JSON.parse(response.data))
+        setDataUsers(response.data)
       }
     } catch (error) {
       console.log(error)
