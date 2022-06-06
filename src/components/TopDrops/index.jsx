@@ -50,7 +50,7 @@ export default function TopDrops () {
       </Section>
       <TextBox>
         <h3><span>Don’t miss any detail!</span></h3>
-        <p>Register now in our whitelist and stay tuned for
+        <p>Register now on our whitelist and stay tuned for
           the launch of our first <span>NFT</span> collection</p>
         <button
           onClick={() => navigate('/register')}
