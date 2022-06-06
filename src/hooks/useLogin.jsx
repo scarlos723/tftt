@@ -21,7 +21,7 @@ export default function login () {
   async function sendCredentials (credentials) {
     setLoading(true)
     try {
-      const response = await loginApi.post('/infouser', {
+      const response = await loginApi.post('/login', {
         email: credentials.user,
         password: credentials.password
       })
