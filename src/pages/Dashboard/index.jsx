@@ -4,11 +4,23 @@ import useLogin from '@/hooks/useLogin'
 import { useEffect } from 'react/cjs/react.production.min'
 import { CSVLink } from 'react-csv'
 
+// "_id": "628ffb02c41e00da2d585159",
+//             "email": "test@test.co",
+//             "firstname": "test",
+//             "lastname": "test",
+//             "wallet": "0xasd",
+//             "created_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",
+//             "updated_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",
+
 const HEADERS_DOC = [
-  { label: 'First Name', key: 'firstName' },
-  { label: 'Last Name', key: 'lastName' },
+  { label: 'DB_ID', key: '_id' },
   { label: 'Email', key: 'email' },
-  { label: 'Age', key: 'age' }
+  { label: 'First Name', key: 'firstname' },
+  { label: 'Last Name', key: 'lastname' },
+  { label: 'Wallet', key: 'wallet' },
+  { label: 'Created at', key: 'created_at' },
+  { label: 'Updated at', key: 'updated_at' }
+
 ]
 
 export default function Dashboard () {
@@ -66,7 +78,7 @@ export default function Dashboard () {
 
   const TableOfUsers = (props) => {
     const csvReport = {
-      data: props.data,
+      data: props.data.users,
       headers: HEADERS_DOC,
       filename: 'TFTT_users_eport.csv'
     }
@@ -78,7 +90,8 @@ export default function Dashboard () {
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           {/* {props.data.users.length} */}
-          <div>
+          <div style={{ display: 'grid', background: 'gray' }}>
+            <h3>Export data to CSV in React - <a href="https://cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
             <CSVLink {...csvReport}>Export to CSV</CSVLink>
           </div>
           <Table>
@@ -115,16 +128,7 @@ export default function Dashboard () {
             ? <LoginForm />
             : <TableOfUsers data={dataUsers} />
         }
-
       </Container>
     </Background>
   )
 }
-
-// "_id": "628ffb02c41e00da2d585159",
-//             "email": "test@test.co",
-//             "firstname": "test",
-//             "lastname": "test",
-//             "wallet": "0xasd",
-//             "created_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",
-//             "updated_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",
