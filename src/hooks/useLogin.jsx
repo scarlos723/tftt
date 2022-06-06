@@ -18,21 +18,37 @@ export default function login () {
 
   })
 
+  function checkToeknStorage () {
+    const token = localStorage.getItem('token')
+    if (token) {
+      return token
+    } else {
+      return null
+    }
+  }
+
   async function sendCredentials (credentials) {
-    setLoading(true)
-    try {
-      const response = await loginApi.post('/login', {
-        email: credentials.user,
-        password: credentials.password
-      })
-      if (response) {
+    const token = localStorage.getItem('tokenTFTT')
+
+    if (token) {
+      getUsers(token)
+    } else {
+      setLoading(true)
+      try {
+        const response = await loginApi.post('/login', {
+          email: credentials.user,
+          password: credentials.password
+        })
+        if (response) {
+          setLoading(false)
+          console.log('esta es la respuesta', response)
+          localStorage.setItem('tokenTFTT', response.data.token)
+          getUsers(response.data.token)
+        }
+      } catch (error) {
+        console.log('ocurrio un error', error)
         setLoading(false)
-        console.log('esta es la respuesta', response)
-        // getUsers(response.data.token)
       }
-    } catch (error) {
-      console.log('ocurrio un error', error)
-      setLoading(false)
     }
   }
 
