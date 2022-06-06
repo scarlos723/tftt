@@ -63,7 +63,7 @@ export default function login () {
       if (response) {
         setLoading(false)
         console.log('response in get users', response)
-        setDataUsers(response.data)
+        setDataUsers(JSON.parse(response.data))
       }
     } catch (error) {
       console.log(error)
