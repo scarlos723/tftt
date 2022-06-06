@@ -91,6 +91,7 @@ export default function Dashboard () {
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           {/* {props.data.users.length} */}
           <div style={{ display: 'grid', background: 'gray' }}>
+            <h3> Get file</h3>
             <h3>Export data to CSV in React - <a href="https://cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
             <CSVLink {...csvReport}>Export to CSV</CSVLink>
           </div>
