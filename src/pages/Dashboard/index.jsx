@@ -77,24 +77,31 @@ export default function Dashboard () {
   }
 
   const TableOfUsers = (props) => {
-    const csvReport = {
-      data: props.data.users,
-      headers: HEADERS_DOC,
-      filename: 'TFTT_users_eport.csv'
-    }
+    const [csvReport, setCsvReport] = React.useState(null)
     useEffect(() => {
       console.log('los datos son ', props.data)
-    }, [])
+      setCsvReport(
+        {
+          data: props.data.users,
+          headers: HEADERS_DOC,
+          filename: 'TFTT_users_eport.csv'
+        }
+      )
+    }, [props.data])
     return (
       <TableContainer>
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
-          {/* {props.data.users.length} */}
-          <div style={{ display: 'grid', background: 'gray' }}>
-            <h3> Get file</h3>
-            <h3>Export data to CSV in React - <a href="https://cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
-            <CSVLink {...csvReport}>Export to CSV</CSVLink>
-          </div>
+
+          {
+            csvReport &&
+            <div style={{ display: 'grid', background: 'gray' }}>
+              <h3> Get file</h3>
+              <h3>Export data to CSV in React - <a href="https://cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
+              <CSVLink {...csvReport}>Export to CSV</CSVLink>
+            </div>
+          }
+
           <Table>
             <tr>
               <th>Email</th>
