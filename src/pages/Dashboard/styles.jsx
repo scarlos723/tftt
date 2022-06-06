@@ -51,3 +51,6 @@ export const Table = styled.table`
     border-bottom: 1px solid white;
   }
 `
+export const TableContainer = styled.div`
+  margin: 100px auto;
+`

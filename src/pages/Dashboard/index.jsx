@@ -1,5 +1,5 @@
 import React from 'react'
-import { Background, Container, FormSesion, InputContaier, Table } from './styles'
+import { Background, Container, FormSesion, InputContaier, Table, TableContainer } from './styles'
 import useLogin from '@/hooks/useLogin'
 import { useEffect } from 'react/cjs/react.production.min'
 
@@ -61,7 +61,7 @@ export default function Dashboard () {
       console.log('los datos son ', props.data)
     }, [])
     return (
-      <div>
+      <TableContainer>
 
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
@@ -87,7 +87,7 @@ export default function Dashboard () {
             }
           </Table>
         </div>
-      </div>
+      </TableContainer>
 
     )
   }
