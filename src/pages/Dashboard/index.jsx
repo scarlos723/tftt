@@ -2,6 +2,14 @@ import React from 'react'
 import { Background, Container, FormSesion, InputContaier, Table, TableContainer } from './styles'
 import useLogin from '@/hooks/useLogin'
 import { useEffect } from 'react/cjs/react.production.min'
+import { CSVLink } from 'react-csv'
+
+const HEADERS_DOC = [
+  { label: 'First Name', key: 'firstName' },
+  { label: 'Last Name', key: 'lastName' },
+  { label: 'Email', key: 'email' },
+  { label: 'Age', key: 'age' }
+]
 
 export default function Dashboard () {
   const [isLoged, loading, dataUsers, sendCredentials] = useLogin()
@@ -57,20 +65,27 @@ export default function Dashboard () {
   }
 
   const TableOfUsers = (props) => {
+    const csvReport = {
+      data: props.data,
+      headers,
+      filename: 'TFTT_users_eport.csv'
+    }
     useEffect(() => {
       console.log('los datos son ', props.data)
     }, [])
     return (
       <TableContainer>
-
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           {/* {props.data.users.length} */}
+          <div>
+            <csvlink {...csvReport}>Export to CSV</csvlink>
+          </div>
           <Table>
             <tr>
-              <th>Company</th>
-              <th>Contact</th>
-              <th>Country</th>
+              <th>Email</th>
+              <th>First Name</th>
+              <th>Wallet</th>
             </tr>
             {
 
@@ -105,3 +120,11 @@ export default function Dashboard () {
     </Background>
   )
 }
+
+// "_id": "628ffb02c41e00da2d585159",
+//             "email": "test@test.co",
+//             "firstname": "test",
+//             "lastname": "test",
+//             "wallet": "0xasd",
+//             "created_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",
+//             "updated_at": "Thu May 26 2022 22:09:24 GMT+0000 (Coordinated Universal Time)",

@@ -43,11 +43,14 @@ export const InputContaier = styled.div`
   }
 `
 export const Table = styled.table`
-  border: white 1px solid;
+  
   tr,th,td{
     color: white;
   }
-  tr{
+  th{
+    text-align: left;
+  }
+  th,td{
     border-bottom: 1px solid white;
   }
 `
