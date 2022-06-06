@@ -65,7 +65,7 @@ export default function Dashboard () {
 
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >loading</h3>
 
-        <h3 style={!loading ? { display: 'block' } : { display: 'none' }}> Este es el numero de users
+        <div style={!loading ? { display: 'block' } : { display: 'none' }}> Este es el numero de users
           {/* {props.data.users.length} */}
           <Table>
             <tr>
@@ -87,28 +87,7 @@ export default function Dashboard () {
 
             }
           </Table>
-        </h3>
-        {/* <Table>
-              <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-              </tr>
-              {
-
-                props.data.users.map((user, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>{user.email}</td>
-                      <td>{user.firstname}</td>
-                      <td>{user.wallet}</td>
-                    </tr>
-                  )
-                })
-
-              }
-            </Table> */}
-
+        </div>
       </div>
 
     )

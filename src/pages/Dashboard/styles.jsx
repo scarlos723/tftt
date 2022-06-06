@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Background = styled.div`
 
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
 `
 export const Container = styled.div`
   display: grid;
@@ -46,5 +46,8 @@ export const Table = styled.table`
   border: white 1px solid;
   tr,th,td{
     color: white;
+  }
+  tr{
+    border-bottom: 1px solid white;
   }
 `
