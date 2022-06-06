@@ -1,6 +1,7 @@
 import React from 'react'
 import { Background, Container, FormSesion, InputContaier, Table } from './styles'
 import useLogin from '@/hooks/useLogin'
+import { useEffect } from 'react/cjs/react.production.min'
 
 export default function Dashboard () {
   const [isLoged, loading, dataUsers, sendCredentials] = useLogin()
@@ -56,18 +57,22 @@ export default function Dashboard () {
   }
 
   const TableOfUsers = (props) => {
-    console.log('los datos son ', props.data)
+    useEffect(() => {
+      console.log('los datos son ', props.data)
+    }, [])
     return (
       <div>
-        {
-          loading
-            ? <h3>loading</h3>
-            : <Table>
+
+        <h3 style={loading ? { display: 'block' } : { display: 'none' }} >loading</h3>
+
+        <h3 style={!loading ? { display: 'block' } : { display: 'none' }}> Este es el numero de users
+          {props.data.users.length}
+        </h3>
+        {/* <Table>
               <tr>
                 <th>Company</th>
                 <th>Contact</th>
                 <th>Country</th>
-                <th>{props.data}</th>
               </tr>
               {
 
@@ -82,8 +87,8 @@ export default function Dashboard () {
                 })
 
               }
-            </Table>
-        }
+            </Table> */}
+
       </div>
 
     )
