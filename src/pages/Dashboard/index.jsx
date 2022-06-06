@@ -1,5 +1,5 @@
 import React from 'react'
-import { Background, Container, FormSesion, InputContaier, Table, TableContainer } from './styles'
+import { Background, ButtobExportContainer, Container, FormSesion, InputContaier, Table, TableContainer } from './styles'
 import useLogin from '@/hooks/useLogin'
 import { useEffect } from 'react/cjs/react.production.min'
 import { CSVLink } from 'react-csv'
@@ -92,16 +92,12 @@ export default function Dashboard () {
       <TableContainer>
         <h3 style={loading ? { display: 'block' } : { display: 'none' }} >Loading</h3>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
-          <h3>
-            Descargar reporte CSV
-          </h3>
+
           {
             csvReport &&
-            <div style={{ display: 'grid', background: 'gray' }}>
-              <h3> Get file</h3>
-              <h3>Export data to CSV in React - <a href="https://cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
+            <ButtobExportContainer >
               <CSVLink {...csvReport}>Export to CSV</CSVLink>
-            </div>
+            </ButtobExportContainer>
           }
 
           <Table>

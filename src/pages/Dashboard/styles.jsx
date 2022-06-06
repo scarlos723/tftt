@@ -57,3 +57,17 @@ export const Table = styled.table`
 export const TableContainer = styled.div`
   margin: 100px auto;
 `
+export const ButtobExportContainer = styled.div`
+  display: grid;
+  place-content: center;
+  a{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+  }
+`
