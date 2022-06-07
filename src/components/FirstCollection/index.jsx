@@ -16,28 +16,50 @@ export default function FirstCollection () {
         <Box>
           <Grid>
             <article className='hidden-mb'>
-              <h3>Earth gorilla$</h3>
+
               <img src={gorilla2} alt="" />
             </article>
             <article>
-              <h3>Water gorilla$</h3>
+
               <img src={gorilla1} alt="" />
             </article>
             <article>
-              <h3>The general</h3>
+
               <img src={gorilla3} alt="" />
             </article>
             <article >
-              <h3>Air gorilla$</h3>
+
               <img src={gorilla5} alt="" />
             </article>
             <article className='hidden-mb'>
-              <h3>Fire gorilla$</h3>
               <img src={gorilla4} alt="" />
             </article>
           </Grid>
+          <div className='hover-grid'>
+            <article className='hidden-mb'>
+              <h3>Earth gorilla$</h3>
+              <div />
+            </article>
+            <article>
+              <h3>Water gorilla$</h3>
+              <div />
+            </article>
+            <article className='middle'>
+              <h3>The general</h3>
+              <div />
+            </article>
+            <article >
+              <h3>Air gorilla$</h3>
+              <div />
+            </article>
+            <article className='hidden-mb'>
+              <h3>Fire gorilla$</h3>
+              <div />
+            </article>
+          </div>
           <div className='comming'>
             <h2 className='style-border-white'>Welcome</h2>
+            <h2 className='hover-text style-border' >COMING SOON</h2>
           </div>
         </Box>
         <h3>WELCOME TO THE GRIME GORILLA$ NFT COLLECTION</h3>
