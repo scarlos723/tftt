@@ -25,11 +25,11 @@ export default function login () {
     const token = localStorage.getItem('tokenTFTT')
 
     if (token) {
-      console.log('token in storage')
+      // console.log('token in storage')
       setIsLoged(true)
       getUsers(token)
     } else {
-      console.log('token dont exist in storage')
+      // console.log('token dont exist in storage')
       setLoading(true)
       try {
         const response = await loginApi.post('/login', {
@@ -38,13 +38,13 @@ export default function login () {
         })
         if (response) {
           setLoading(false)
-          console.log('esta es la respuesta', response)
+          // console.log('esta es la respuesta', response)
           localStorage.setItem('tokenTFTT', response.data.token)
           setIsLoged(true)
           getUsers(response.data.token)
         }
       } catch (error) {
-        console.log('ocurrio un error', error)
+        console.log('Error sending credentials: ', error)
         setLoading(false)
       }
     }
@@ -67,11 +67,11 @@ export default function login () {
       const response = await getInfoApi.get('/infouser?page=1&limit=0')
       if (response) {
         setLoading(false)
-        console.log('response in get users', response)
+        // console.log('response in get users', response)
         setDataUsers(response.data)
       }
     } catch (error) {
-      console.log(error)
+      console.log('Error getting users: ', error)
       setLoading(false)
     }
   }

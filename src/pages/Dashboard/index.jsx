@@ -35,7 +35,7 @@ export default function Dashboard () {
       password: ''
     })
     function handlerChange (e) {
-      console.log('los valores son ', [e.target.name, e.target.value])
+      // console.log('los valores son ', [e.target.name, e.target.value])
       setDataInputs({
         ...dataInputs,
         [e.target.name]: e.target.value
@@ -82,7 +82,7 @@ export default function Dashboard () {
   const TableOfUsers = (props) => {
     const [csvReport, setCsvReport] = React.useState(null)
     useEffect(() => {
-      console.log('los datos son ', props.data)
+      // console.log('los datos son ', props.data)
       setCsvReport(
         {
           data: props.data.users,
