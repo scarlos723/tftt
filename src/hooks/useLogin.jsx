@@ -21,7 +21,8 @@ export default function login () {
 
   })
 
-  async function sendCredentials (credentials) {
+  async function sendCredentials (e, credentials) {
+    e.preventDefault()
     const token = localStorage.getItem('tokenTFTT')
 
     if (token) {

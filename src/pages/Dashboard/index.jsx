@@ -41,14 +41,7 @@ export default function Dashboard () {
         [e.target.name]: e.target.value
       })
     }
-    function handlerLogin (e) {
-      e.preventDefault()
-      console.log('Login')
-      sendCredentials(dataInputs)
-    }
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
+
     return (
       <div>
         <h1>Use your credentials to access</h1>
@@ -73,7 +66,7 @@ export default function Dashboard () {
               value={dataInputs.password}
             />
           </InputContaier>
-          <button id='input-password' className='custom-btn' onClick={(e) => handlerLogin(e)}>Login</button>
+          <button id='input-password' className='custom-btn' onClick={(e) => sendCredentials(e, dataInputs)}>Login</button>
         </FormSesion>
       </div>
     )
@@ -82,7 +75,6 @@ export default function Dashboard () {
   const TableOfUsers = (props) => {
     const [csvReport, setCsvReport] = React.useState(null)
     useEffect(() => {
-      // console.log('los datos son ', props.data)
       setCsvReport(
         {
           data: props.data.users,
@@ -129,6 +121,9 @@ export default function Dashboard () {
     )
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Background>
       <Container>
