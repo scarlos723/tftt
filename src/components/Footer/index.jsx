@@ -3,7 +3,6 @@ import { Contain, Container, ImgTFTT } from './styles'
 import logo from '@/logos/logoTFTT.svg'
 import imgTftt from '@/images/footer/TFTT.png'
 import imgFade from '@/images/footer/FADE.png'
-import { Link } from 'react-router-dom'
 export default function Footer () {
   return (
     <Container>
@@ -19,9 +18,6 @@ export default function Footer () {
         <div>
           <p> DarkHorse Film Studios All Rights Reserved.</p>
           <img src={logo} alt="" />
-
-          <Link to='/dashboard' style={{ textDecoration: 'none' }}><p style={{ fontSize: 8 }}>Go to dashboard(only admin)</p></Link>
-
         </div>
       </Contain>
     </Container>
