@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import articleImg from '../../assets/images/marketplace/articleImg.png'
+import shadowImg from '../../assets/images/marketplace/shadow.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const Container = styled.div`
@@ -74,35 +75,115 @@ export const Box = styled.div`
   background-position-x: center;
   position: relative;
   .comming{
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      position: absolute;
-      bottom: 0;
-      background: linear-gradient(179.66deg, rgba(217, 217, 217, 0) 0.3%, rgba(0, 0, 0, 0.67) 51.55%);
-      background-size: contain; 
-      background-position-y: 100%;
-      width: 100%;
-      height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background: url(${shadowImg});
+    background-size: 100% 100%; 
+    background-position-y: center;
+    width: 100%;
+    height: 70%;
+    .hover-text{
+        display: none;
+        font-size: 35px;
+    }
+  }
+  .hover-grid{
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: grid;
+    width: 100%;
+    height: 120px;
+    background: #00000082;
+    grid-template-columns:  1fr 1.3fr 1fr;
+    .hidden-mb{
+      display: none;
+    }
+    article{
+      h3{
+        padding: 0;
+        opacity: 0;
+      }
+      &:hover{
+        h3{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &:hover{
+    .comming{
+      h2{
+        display: none;
+      }
+      .hover-text{
+        display: block;
+      }
+      padding-bottom: 20px;
+    }
+    .hover-grid{
+      opacity: 1;
+      
+    }
   }
   ${ResponsiveTo('md')}{
     height: 256.25px;
     .comming{
-      height: 80px;
+      .hover-text{
+        font-size: 55px;
+      }
+    }
+    .hover-grid{
+      grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
+      height: 256.25px;
+      .hidden-mb{
+      display: block;
+      }
+      article{
+        h3{
+          margin-top: 20px;
+        }
+      }
     }
   }
 
   ${ResponsiveTo('lg')}{
     height: 369.25px;
     .comming{
-      height: 100px;
+      .hover-text{
+        font-size: 70px;
+      }
+    }
+    .hover-grid{
+      height: 369.25px; 
+      
+      article{
+        h3{
+          margin-top: 136px;
+        }
+      }
+      .middle{
+        h3{
+          margin-top: 96px;
+        }
+      }
     }
   }
   ${ResponsiveTo('xl')}{
     max-width: 1026px;
     height: 431px;
     .comming{
-      height: 120px;
+      .hover-text{
+        font-size: 75px;
+      }
+    }
+    .hover-grid{
+      height: 100%;
     }
   }
 `
@@ -115,25 +196,13 @@ export const Grid = styled.div`
   position: relative;
   article{
     position: relative;
-    
-    h3{
-      display: none;
-      opacity: 0;
-      transition: all 0.5s;
-      padding: 0;
-    }
     img{
       width: 100%;
     }
-    &:hover{
-      h3{
-        opacity: 1;
-        }
-      }
-    } 
-    .hidden-mb{
-      display: none;
-    }
+  }
+  .hidden-mb{
+    display: none;
+  }
   ${ResponsiveTo('md')}{
     grid-template-columns:  1fr 1fr 1.3fr 1fr 1fr;
     height: 256.25px;
@@ -145,12 +214,6 @@ export const Grid = styled.div`
   ${ResponsiveTo('lg')}{
     height: 369.25px; 
     padding-bottom: 38px;
-    article{
-      h3{
-        display: block;
-        font-size: 15px;
-      }
-    }
   }
   ${ResponsiveTo('xl')}{
     padding-bottom: 0;
