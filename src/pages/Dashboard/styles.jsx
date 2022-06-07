@@ -60,6 +60,8 @@ export const TableContainer = styled.div`
 export const ButtobExportContainer = styled.div`
   display: grid;
   place-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
   a{
     display: flex;
     justify-content: center;
