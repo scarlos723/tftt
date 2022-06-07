@@ -46,6 +46,9 @@ export default function Dashboard () {
       console.log('Login')
       sendCredentials(dataInputs)
     }
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
     return (
       <div>
         <h1>Use your credentials to access</h1>
