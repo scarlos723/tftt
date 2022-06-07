@@ -49,6 +49,7 @@ export const Title = styled.div`
     }
   }
   h1{
+    color: black;
     margin-top: -10px;
     font-size: 40px;
     letter-spacing: 0.01rem;

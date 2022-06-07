@@ -6,21 +6,17 @@ import { ResponsiveTo } from '../../hooks/useResponsive'
 export const Container = styled.div`
   width: 100%;
   height: auto;
-  margin-top: 65px;
+  margin-top: 1.5rem;
   ${ResponsiveTo('md')}{
-    
-    margin-top: 81px;
     padding-bottom: 10px;
   }
   ${ResponsiveTo('lg')}{
-    margin-top: 0;
-    padding-top: 144px;
+    margin-top: 1.125rem;
     padding-bottom: 20px;
-    
     background-position-y: bottom;
   }
   ${ResponsiveTo('xl')}{
-    padding-top: 244px;
+    margin-top: 2rem;
     background-position-y: center;
   }
 `

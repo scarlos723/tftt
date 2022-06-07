@@ -18,7 +18,7 @@ export default function TopDrops () {
   return (
     <Container>
       <Title>
-        <div className='text'><img src={logo} alt="" /> <h3>MARKETPLACE</h3></div>
+        <div className='text'><img src={logo} alt="" /> <h3>MARKET<span>PLACE</span></h3></div>
         <h1 className='style-border'>COMING SOON</h1>
       </Title>
       <Section>
