@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const Background = styled.div`
 
@@ -56,6 +57,17 @@ export const Table = styled.table`
 `
 export const TableContainer = styled.div`
   margin: 100px auto;
+  display: flex;
+  width: 90%;
+  overflow-x: scroll;
+  ${ResponsiveTo('md')}{
+    overflow: hidden;
+    
+  }
+  ${ResponsiveTo('lg')}{
+    width: auto;
+  }
+
 `
 export const ButtobExportContainer = styled.div`
   display: grid;
