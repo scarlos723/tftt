@@ -27,12 +27,12 @@
   border: 1px solid #ffffff00;
 }
 .style-border{
-  color: transparent;
+  color: black;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(241, 5, 5, 1);
 }
 .style-border-white{
-  color: transparent;
+  color: black;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
