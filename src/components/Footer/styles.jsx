@@ -24,7 +24,7 @@ export const Contain = styled.section`
   height: 100%;
   justify-content: center;
   align-items: center;
-  max-width: 706px;
+  /* max-width: 706px; */
   margin: 0 auto;
   h1, div{
     position: relative;
@@ -41,7 +41,7 @@ export const Contain = styled.section`
     letter-spacing: -0.011em;
   }
   h1{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 85%;
     letter-spacing: -0.02rem;
     margin: 0;

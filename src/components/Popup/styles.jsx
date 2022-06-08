@@ -57,7 +57,7 @@ export const Section = styled.section`
     height: 545px;
     padding: 38px 100px 62px 100px;
     button{
-      max-width: 476px;;
+      max-width: 476px;
     }
   }
   ${ResponsiveTo('xl')}{
@@ -72,6 +72,13 @@ export const Text = styled.div`
   display: grid;
   margin-bottom: 50px;
   gap: 22px;
+  h2 {
+    // Highlight white text on black background
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  h3 {
+    font-size: 25px;
+  }
 `
 export const Image = styled.img.attrs({
   src: gorillas,
@@ -84,9 +91,13 @@ export const Image = styled.img.attrs({
   height: auto;
   ${ResponsiveTo('md')}{
     width: 420px;
-    margin-bottom: -0.85rem;
+    margin-bottom: -2.2rem;
   }
   ${ResponsiveTo('lg')}{
     width: 476px;
+  }
+  ${ResponsiveTo('xl')}{
+    width: 620px;
+    margin-bottom: -3.3rem;
   }
 `

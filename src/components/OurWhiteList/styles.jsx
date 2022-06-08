@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import bgImg from '@/images/home/bgOurWhiteList.png'
-import { ResponsiveTo } from '../../hooks/useResponsive'
+import { ResponsiveTo } from '@/hooks/useResponsive'
+
 export const Container = styled.div`
   width: 100%;
   height: 400px;
@@ -30,24 +31,41 @@ export const TextBox = styled.div`
   place-items: center;
   h1{
     letter-spacing: 0.1em;
-    padding: 0 50px;
-    margin-bottom: 8px;
+    padding: 0 1.75rem;
+    margin-bottom: 2rem;
+    line-height: 113%;
   }
   button{
-    margin-top: 12px;
-    width: 192.41px;
-    height: 30.17px;
-    padding: 0;
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 8px 0;
+    max-width: 192px;
+  }
+  h3 {
+    line-height: 140%;
   }
   ${ResponsiveTo('md')}{
     height:auto;
     h1{
       font-size: 50px;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      margin-top: 0.75rem;
+      max-width: 232px;
+      padding: 10px 0;
     }
   }
   ${ResponsiveTo('xl')}{
     h1{
       font-size: 65px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    button {
+      padding: 18px 0;
+      max-width: 310px;
     }
   }
 `

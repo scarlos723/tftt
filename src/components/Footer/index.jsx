@@ -13,11 +13,11 @@ export default function Footer () {
         </ImgTFTT>
 
         <h1 className='style-border'>
-          COMING <br /> SOON
+          COMING SOON
         </h1>
         <div>
           <p> DarkHorse Film Studios All Rights Reserved.</p>
-          <img src={logo} alt="" />
+          <img src={logo} alt="TFTT Logo" />
         </div>
       </Contain>
     </Container>
