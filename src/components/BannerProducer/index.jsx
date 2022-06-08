@@ -5,7 +5,7 @@ export default function BannerProducer () {
   return (
     <Background>
       <div>
-        <h1>The producer</h1>
+        <h1>The producers</h1>
       </div>
     </Background>
   )
