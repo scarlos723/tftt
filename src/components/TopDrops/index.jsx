@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Article,
+  // Article,
   CardsContainer,
   Container,
   // RowButton,
@@ -10,9 +10,6 @@ import {
 } from './styles'
 import { useNavigate } from 'react-router-dom'
 import LogoTFTT from '@/logos/logoTFTT'
-import picture1 from '@/images/marketplace/picture1.png'
-import picture2 from '@/images/marketplace/picture2.png'
-import picture3 from '@/images/marketplace/picture3.png'
 
 export default function TopDrops() {
   const navigate = useNavigate()
@@ -27,30 +24,10 @@ export default function TopDrops() {
       </Title>
       <Section>
         <CardsContainer>
-          <Article >
-            <img src={picture1} alt="picture singer man" />
-            <div className="hover">
-              <h3>purchase a <br /> roll in the film</h3>
-            </div>
-          </Article>
-          <Article >
-            <img src={picture2} alt="picture singer girls" />
-            <div className="hover">
-              <h3>
-                purchase the opportunity to walk in the red carpet
-              </h3>
-            </div>
-          </Article>
-          <Article >
-            <img src={picture3} alt="picture man in to scene" />
-            <div className="hover">
-              <h3>
-                purchase the opportunity to meet the cast members
-              </h3>
-            </div>
-          </Article>
+          <article />
+          <article />
+          <article />
         </CardsContainer>
-
       </Section>
       <TextBox>
         <h3><span>Don’t miss any detail!</span></h3>

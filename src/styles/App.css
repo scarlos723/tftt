@@ -27,14 +27,14 @@
   border: 1px solid #ffffff00;
 }
 .style-border{
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #f10505;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(241, 5, 5, 1);
 }
 .style-border-white{
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 768px) {
   .custom-btn{

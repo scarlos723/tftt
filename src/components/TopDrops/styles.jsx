@@ -1,6 +1,15 @@
 import styled from 'styled-components'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 import bgImg from '../../assets/images/marketplace/bgFirstCollection.png'
+
+import picture1 from '@/images/marketplace/picture1.png'
+import picture2 from '@/images/marketplace/picture2.png'
+import picture3 from '@/images/marketplace/picture3.png'
+
+import hover1 from '@/images/marketplace/hover1.png'
+import hover2 from '@/images/marketplace/hover2.png'
+import hover3 from '@/images/marketplace/hover3.png'
+
 export const Container = styled.div`
   margin-top: 64px;
   background: url(${bgImg});
@@ -117,12 +126,48 @@ export const CardsContainer = styled.div`
   margin-top: 16px;
   width: 241px;
   overflow: hidden;
-  article:last-child{
+  article{
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: white;
+  }
+  article:nth-child(1){
+    background-image: url(${picture1});
+    &:hover{
+      background-image: url(${hover1});
+    }
+  }
+  article:nth-child(2){
+    background-image: url(${picture2});
+    &:hover{
+      background-image: url(${hover2});
+    }
+  }
+  article:nth-child(3){
+    background-image: url(${picture3});
     grid-column: span 2;
-    width: 100%;
-    overflow: hidden;
-    img{
-        object-position: 0 -60px;
+    width: 242px;
+    height: 109px;
+    
+    &:hover{
+      background-image: url(${hover3});
+    }
+  }
+  article{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    &:hover{
+      border-radius: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  article:nth-child(3){
+    background-position-y: -50px;
+    &:hover{
+      border-radius: 0;
     }
   }
   ${ResponsiveTo('md')}{
@@ -131,20 +176,27 @@ export const CardsContainer = styled.div`
     width: 100%;
     justify-content: center;
     gap: 30px;
-    article:last-child{
+    article, article:nth-child(3){
+      border-radius: 18px;
+      width: 166.03px;
+      height: 255.81px;
       grid-column: unset;
-      width: auto;
-      overflow: hidden;
-      img{
-          object-position: 0;
-      }
+      background-position-y: center;
     }
   }
   ${ResponsiveTo('lg')}{
     gap: 36px;
+    article, article:nth-child(3){
+      width: 239.24px;
+      height: 368.61px
+    }
   }
   ${ResponsiveTo('xl')}{
     gap: 48px;
+    article, article:nth-child(3){
+      width: 270px;
+      height: 416px;
+    }
   }
 `
 export const RowButton = styled.button`
@@ -152,55 +204,22 @@ export const RowButton = styled.button`
   font-size: 30px;
   font-stretch: expanded;
 `
-export const Article = styled.article`
-  width: 116.18px;
-  min-width: 116.18px;
-  height: 179px;
-  background: #545454;
-  border-radius: 10px;
-  position: relative;
-  img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  .hover{
-    display: none;
-    transition: all 0.3s;
-  }
-  &:hover{
-    .hover{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 24px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 10px;
-      width: 100%;
-      height: 100%;
-      background: rgba(43, 3, 3, 0.85);
-    }
-  }
-  ${ResponsiveTo('md')}{
-    width: 166.03px;
-    height: 255.81px;
-    border-radius: 20px;
-    img{
-      border-radius: 20px;
-    }
-  }
-  ${ResponsiveTo('lg')}{
-    width: 239.24px;
-    height: 368.61px;
-  }
-  ${ResponsiveTo('xl')}{
-    width: 270px;
-    height: 416px;
-  }
-`
+// export const Article = styled.article`
+
+//   ${ResponsiveTo('md')}{
+//     width: 166.03px;
+//     height: 255.81px;
+//     border-radius: 20px;
+//   }
+//   ${ResponsiveTo('lg')}{
+//     width: 239.24px;
+//     height: 368.61px;
+//   }
+//   ${ResponsiveTo('xl')}{
+//     width: 270px;
+//     height: 416px;
+//   }
+// `
 export const TextBox = styled.div`
   display: flex;
   flex-flow: column nowrap;

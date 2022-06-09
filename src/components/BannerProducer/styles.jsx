@@ -11,8 +11,8 @@ export const Background = styled.div`
   display: grid;
   place-content: center;
   height: 422px;
-  h1 {
-    letter-spacing: normal;
+  h1{
+    letter-spacing: 0.01rem;
   }
   ${ResponsiveTo('md')}{
     height: 703px;
