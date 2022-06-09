@@ -7,7 +7,7 @@ export default function Participate () {
     <Container>
       <Box>
         <h2>participate in film<span style={{ color: '#12D466' }}>coin</span></h2>
-        <h3><span>The Motion Picture Digital Currency Of Choice</span></h3>
+        <h3>The Motion Picture Digital Currency Of <span>Choice</span></h3>
         <div className='icons-container'>
           <article
             onClick={() => {

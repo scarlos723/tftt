@@ -5,51 +5,55 @@ import { Link } from 'react-router-dom'
 import { Container, Menu, MenuIcon, Nav, RightBox } from './styles'
 
 // Images and Icons
-import logo from '@/logos/logoTFTT.svg'
 import textLogo from '@/logos/textLogo.svg'
-export default function Navbar (props) {
+import LogoTFTT from '@/logos/logoTFTT'
+import { useLocationVariant } from '@/hooks/useLocationVariant'
+import { colorVariants } from '@/utils/colorVariants'
+
+export default function Navbar(props) {
   const [isOpen, setIsOpen] = React.useState(false)
+  const locationVariant = useLocationVariant();
 
   return (
     <Container gradient={props.gradient}>
       <Nav>
         <Link to='/'>
-          <img className='img-logo' src={logo} alt=" logo" />
+          <LogoTFTT variant={locationVariant} />
         </Link>
         <Menu isOpen={isOpen}>
-          <li className='li-logo'>
+          <li>
             <Link to='/'>
-              <img className='img-logo' src={textLogo} alt=" logo" />
+              <LogoTFTT variant={locationVariant} />
             </Link>
           </li>
           <li>
             <Link to='/aboutus'>
-            ABOUT TFT<span>T</span>
+              ABOUT TFT<span style={{ color: locationVariant === colorVariants.secondary && '#0E8C0D' }}>T</span>
             </Link>
           </li>
           <li>
             <Link to='/marketplace'>
-            E-commerce
+              E-commerce
             </Link>
           </li>
           <li>
             <Link to='/producer'>
-            Producers
+              Producers
             </Link>
           </li>
           <li>
             <Link to='/news'>
-            News
+              News
             </Link>
           </li>
           <li>
             <Link to='/events'>
-            events
+              events
             </Link>
           </li>
           <li>
             <Link to='/filmcoin'>
-            FILMCOIN
+              FILMCOIN
             </Link>
           </li>
           <li className='join-text cursor-pointer'>
@@ -61,7 +65,7 @@ export default function Navbar (props) {
         </Menu>
         <RightBox>
           <div className='cursor-pointer'>
-            <MenuIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}/>
+            <MenuIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
           </div>
           <Link to='/register'>
             <h4 className='cursor-pointer'>

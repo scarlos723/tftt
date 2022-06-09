@@ -14,7 +14,6 @@ export const Container = styled.div`
     img{
       width: 454px;
       height: 247.57px;
-      
     }
   }
 `
@@ -30,7 +29,6 @@ export const Text = styled.div`
     font-weight: 600;
     font-size: 12px;
     line-height: 140%;
-    /* identical to box height, or 17px */
     text-align: justify;
     text-transform: uppercase;
     color: white;

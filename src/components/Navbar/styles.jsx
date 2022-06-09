@@ -31,14 +31,14 @@ export const Nav = styled.nav`
   a{
     text-decoration: none;
   }
-  .img-logo{
+  svg {
     width: 70px;
     height: 33px;
   }
 
   ${ResponsiveTo('md')} {
     max-width: 708px;
-    .img-logo{
+    svg {
       width: 126px;
       height: 57px;
     }

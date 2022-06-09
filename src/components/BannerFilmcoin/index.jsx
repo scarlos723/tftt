@@ -5,7 +5,7 @@ export default function BannerFilmcoin () {
   return (
     <Background>
       <Box>
-        <h3><span>Darkhorse INTRODUCES</span></h3>
+        <h3>Darkhorse INTRODUCES</h3>
         <img src={logo} alt="filmcoin logo" />
       </Box>
     </Background>

@@ -68,9 +68,9 @@ function FormRegister () {
         />
         <Input
           type='text'
-          label='Wallet Address'
+          label='Ethereum Wallet Address'
           name='wallet'
-          placeholder='Enter wallet address'
+          placeholder='Enter ethereum wallet address'
           required
           error={errors.wallet ? errors.wallet.message : ''}
           onChange={register('wallet').onChange}

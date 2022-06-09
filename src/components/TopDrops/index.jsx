@@ -9,16 +9,20 @@ import {
   Title
 } from './styles'
 import { useNavigate } from 'react-router-dom'
-import logo from '../../assets/logos/logoTFTT.svg'
+import LogoTFTT from '@/logos/logoTFTT'
 import picture1 from '@/images/marketplace/picture1.png'
 import picture2 from '@/images/marketplace/picture2.png'
 import picture3 from '@/images/marketplace/picture3.png'
-export default function TopDrops () {
+
+export default function TopDrops() {
   const navigate = useNavigate()
   return (
     <Container>
       <Title>
-        <div className='text'><img src={logo} alt="" /> <h3>MARKET<span>PLACE</span></h3></div>
+        <div className='text'>
+          <LogoTFTT />
+          <h3>MARKET<span>PLACE</span></h3>
+        </div>
         <h1 className='style-border'>COMING SOON</h1>
       </Title>
       <Section>
