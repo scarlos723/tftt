@@ -13,12 +13,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    background: radial-gradient(52.3% 54.95% at 98.39% 47.25%, 
-                rgba(10, 128, 61, 0.8) 0%,
-              rgba(0, 0, 0, 0) 100%);
-    background-size: 1024px 581px;
-    background-repeat: no-repeat;
-    background-position-x: right;
   }
 `
 export const Textbox = styled.section`
@@ -48,6 +42,7 @@ export const Textbox = styled.section`
     height: 246px;
     position: relative;
     left: -100px;
+    z-index: 2;
   }
   ${ResponsiveTo('xl')}{
     width: 413px;
