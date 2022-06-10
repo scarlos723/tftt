@@ -27,6 +27,13 @@ export const Textbox = styled.section`
   p{
     margin-top: 8px;
   }
+  a {
+    text-decoration: none;
+    &:hover, &:focus, &:active, &:visited {
+      text-decoration: none;
+      color: white;
+    }
+  }
   ${ResponsiveTo('md')}{
     max-width: 450px;
     gap: 22px;
