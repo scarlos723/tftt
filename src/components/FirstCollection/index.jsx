@@ -16,7 +16,6 @@ export default function FirstCollection () {
         <Box>
           <Grid>
             <article className='hidden-mb'>
-
               <img src={gorilla2} alt="" />
             </article>
             <article>
@@ -37,11 +36,11 @@ export default function FirstCollection () {
           </Grid>
           <div className='hover-grid'>
             <article className='hidden-mb'>
-              <h3>Earth gorilla$</h3>
+              <h3>Green$</h3>
               <div />
             </article>
             <article>
-              <h3>Water gorilla$</h3>
+              <h3>Dj Grill$</h3>
               <div />
             </article>
             <article className='middle'>
@@ -49,11 +48,11 @@ export default function FirstCollection () {
               <div />
             </article>
             <article >
-              <h3>Air gorilla$</h3>
+              <h3>MC Dollar$</h3>
               <div />
             </article>
             <article className='hidden-mb'>
-              <h3>Fire gorilla$</h3>
+              <h3>Hitman$</h3>
               <div />
             </article>
           </div>
