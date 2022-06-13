@@ -183,6 +183,9 @@ export const Menu = styled.ul`
     : css`
     opacity: 0;
     left: -539px  `};
+    li:first-child{
+      height: 6rem;
+    }
   }
   ${ResponsiveTo('lg')}{
     padding: 0 20px;
@@ -200,6 +203,9 @@ export const Menu = styled.ul`
     li{
       height: auto;
       border: none;
+    }
+    li:first-child {
+      display: none;
     }
     .li-logo{
       display: none;
