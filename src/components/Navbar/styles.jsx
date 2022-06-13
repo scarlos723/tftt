@@ -52,7 +52,6 @@ export const Nav = styled.nav`
     width: 90%;
     max-width: 901px;
     margin: 0 auto;
-    //margin-top: 52px;
   }
   ${ResponsiveTo('xl')} {
     max-width: 1199px;
@@ -158,21 +157,8 @@ export const Menu = styled.ul`
       }
     }
   }
-  .li-logo{
-    border: 1px solid white;
-    height: 33px;
-    display: grid;
-    place-items: center;
+  li:first-child{
     margin-top: 45px;
-    a{
-      width: 52px;
-      height: 16px;
-      img{
-        width: 100%;
-        height: 100%;
-      }
-    }
-    
   }
   .join-text{
     a{

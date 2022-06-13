@@ -21,7 +21,7 @@ export default function Navbar(props) {
           <LogoTFTT variant={locationVariant} />
         </Link>
         <Menu isOpen={isOpen}>
-          <li className='li-logo'>
+          <li>
             <Link to='/'>
               <LogoTFTT variant={locationVariant} />
             </Link>
