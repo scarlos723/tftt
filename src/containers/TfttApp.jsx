@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import MiniPopup from '@/components/MiniPopup'
 
-function TfttApp({ gradient }) {
+function TfttApp ({ gradient }) {
   return (
     <>
       <Navbar gradient={gradient} />

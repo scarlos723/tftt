@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 import GorillasFooter from '@/components/GorillasFooter'
 import GorillasNavbar from '@/components/GorillasNavbar'
 
-function FirstCollection() {
+function FirstCollection () {
   return (
     <>
       <GorillasNavbar />

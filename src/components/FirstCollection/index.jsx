@@ -37,23 +37,23 @@ export default function FirstCollection () {
             </article>
           </Grid>
           <div className='hover-grid'>
-            <article onClick={() => navigate('/green')} className='hidden-mb'>
+            <article onClick={() => navigate('/first-collection/green')} className='hidden-mb'>
               <h3>Green$</h3>
               <div />
             </article>
-            <article onClick={() => navigate('/djgrill')}>
+            <article onClick={() => navigate('/first-collection/djgrill')}>
               <h3>Dj Grill$</h3>
               <div />
             </article>
-            <article onClick={() => navigate('/thegeneral')} className='middle'>
+            <article onClick={() => navigate('/first-collection')} className='middle'>
               <h3>The general</h3>
               <div />
             </article>
-            <article onClick={() => navigate('/mcdollar')} >
+            <article onClick={() => navigate('/first-collection/mcdollar')} >
               <h3>MC Dollar$</h3>
               <div />
             </article>
-            <article onClick={() => navigate('/hitman')} className='hidden-mb'>
+            <article onClick={() => navigate('/first-collection/hitman')} className='hidden-mb'>
               <h3>Hitman$</h3>
               <div />
             </article>
