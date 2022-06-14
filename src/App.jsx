@@ -1,7 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from '@/pages/Home'
 import Marketplace from './pages/Marketplace'
 import Terms from '@/pages/Terms'
@@ -11,7 +9,6 @@ import AboutUs from './pages/AboutUs'
 import News from './pages/News/ index'
 import Events from './pages/Events'
 import Producer from './pages/Producer'
-import MiniPopup from './components/MiniPopup'
 import Filmcoin from './pages/Filmcoin'
 
 import '@/styles/App.css'
@@ -23,8 +20,10 @@ import Green from './pages/Green'
 import DjGrill from './pages/DjGrill'
 import McDollar from './pages/McDollar'
 import Hitman from './pages/Hitman'
+import TfttApp from '@/containers/TfttApp'
+import FirstCollection from '@/containers/FirstCollection'
 
-function App () {
+function App() {
   const [gradient, setGradient] = useState(false)
   useEffect(() => {
     document.addEventListener('scroll', e => {
@@ -38,28 +37,32 @@ function App () {
   }, [])
   return (
     <BrowserRouter>
-      <Navbar gradient={gradient}/>
-      <MiniPopup />
       <Routes >
-        <Route index element={<Home />} />
-        <Route path='/marketplace' element={<Marketplace/>}/>
-        <Route path='/terms' element={<Terms />} />
-        <Route path='/aboutus' element={<AboutUs />} />
-        <Route path='/news' element={<News />} />
-        <Route path='/events' element={<Events />} />
-        <Route path='/producer' element={<Producer />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/success' element={<Success />} />
-        <Route path='/filmcoin' element={<Filmcoin />} />
-        <Route path='/errorpage' element={<ErrorPage />} />
-        <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/theGeneral' element={<TheGeneral />} />
-        <Route path='/green' element={<Green />} />
-        <Route path='/djgrill' element={<DjGrill />} />
-        <Route path='/mcdollar' element={<McDollar />} />
-        <Route path='/hitman' element={<Hitman />} />
+        <Route path='/' element={<TfttApp gradient={gradient} />}>
+          <Route index element={<Home />} />
+          <Route path='marketplace' element={<Marketplace />} />
+          <Route path='terms' element={<Terms />} />
+          <Route path='aboutus' element={<AboutUs />} />
+          <Route path='news' element={<News />} />
+          <Route path='events' element={<Events />} />
+          <Route path='producer' element={<Producer />} />
+          <Route path='register' element={<Register />} />
+          <Route path='success' element={<Success />} />
+          <Route path='filmcoin' element={<Filmcoin />} />
+          <Route path='errorpage' element={<ErrorPage />} />
+          <Route path='dashboard' element={<Dashboard />} />
+        </Route>
+        {/* Expected to have a /collection route parent in the future */}
+        <Route path='/first-collection' element={<FirstCollection />}>
+          {/* So the /first-collection index redirects to the general page */}
+          <Route index element={<Navigate replace to='thegeneral' />} />
+          <Route path='thegeneral' element={<TheGeneral />} />
+          <Route path='green' element={<Green />} />
+          <Route path='djgrill' element={<DjGrill />} />
+          <Route path='mcdollar' element={<McDollar />} />
+          <Route path='hitman' element={<Hitman />} />
+        </Route>
       </Routes>
-      <Footer/>
     </BrowserRouter>
   )
 }
