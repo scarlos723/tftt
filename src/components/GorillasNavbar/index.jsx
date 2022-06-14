@@ -13,11 +13,14 @@ function GorillasNavbar() {
   return (
     <Container>
       <Nav>
-        <GrimeHome to="/">
+        <Link to='/'>
+          <LogoTFTT />
+        </Link>
+        <GrimeHome to="/first-collection/thegeneral">
           GRIME GORILLA$
         </GrimeHome>
         <Menu isOpen={isOpen}>
-          <GrimeHome to="/">
+          <GrimeHome to="/first-collection/thegeneral">
             GRIME GORILLA$
           </GrimeHome>
           <li onClick={() => scrollToSection('about')}>

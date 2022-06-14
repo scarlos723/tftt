@@ -6,23 +6,23 @@ function GorillasFooter() {
   return (
     <Footer>
       <Row>
-        <GrimeHome to="/">
+        <GrimeHome to="/first-collection/thegeneral">
           GRIME GORILLA$
         </GrimeHome>
         <ul>
-          <li><PageLink to='/'>
+          <li><PageLink to='/first-collection/thegeneral'>
             The General
           </PageLink></li>
-          <li><PageLink to='/'>
+          <li><PageLink to='/first-collection/green'>
             Green$
           </PageLink></li>
-          <li><PageLink to='/'>
+          <li><PageLink to='/first-collection/djgrill'>
             DJ Grill$
           </PageLink></li>
-          <li><PageLink to='/'>
+          <li><PageLink to='/first-collection/mcdollar'>
             Mc Dollar$
           </PageLink></li>
-          <li><PageLink to='/'>
+          <li><PageLink to='/first-collection/hitman'>
             Hitman$
           </PageLink></li>
         </ul>

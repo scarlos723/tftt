@@ -24,7 +24,7 @@ export default function GorillasLanding ({ dataInfo }) {
         </div>
       </BannerContainer>
 
-      <SectionText>
+      <SectionText id='about'>
         <Title>
           <h2>Meet  &nbsp;
             <span className={dataInfo.isGeneral ? 'style-border-gold' : 'style-border-white'}>
@@ -102,7 +102,7 @@ export default function GorillasLanding ({ dataInfo }) {
 
         </AboutSection>
       }
-      <GridSection isGeneral={dataInfo.isGeneral}>
+      <GridSection id='utility' isGeneral={dataInfo.isGeneral}>
         <div className='grid'>
 
           <div className='text-box'>

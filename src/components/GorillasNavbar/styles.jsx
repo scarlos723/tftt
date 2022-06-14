@@ -23,23 +23,28 @@ export const Nav = styled.nav`
   a{
     text-decoration: none;
   }
-
+  & > a:first-child {
+    display: none;
+  }
   ${ResponsiveTo('md')} {
     padding: 35px 3rem;
   }
   ${ResponsiveTo('lg')} {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 156px 240px 1fr;
     place-content: center;
     place-items: center;
     width: 90%;
     max-width: 901px;
     margin: 0 auto;
     padding: 35px 0;
-    //margin-top: 52px;
+    & > a:first-child {
+      display: block;
+      justify-self: start;
+    }
   }
   ${ResponsiveTo('xl')} {
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 156px 280px 1fr;
     max-width: 1199px;
   }
 `
@@ -60,7 +65,6 @@ export const GrimeHome = styled(Link)`
   }
 `
 
-// ESto otro
 export const RightBox = styled.div`
   ${ResponsiveTo('lg')}{
     display: none;
