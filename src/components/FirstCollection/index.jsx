@@ -7,8 +7,10 @@ import gorilla2 from '@/images/marketplace/gorilla2.png'
 import gorilla3 from '@/images/marketplace/gorilla3.png'
 import gorilla4 from '@/images/marketplace/gorilla4.png'
 import gorilla5 from '@/images/marketplace/gorilla5.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function FirstCollection () {
+  const navigate = useNavigate()
   return (
     <Container>
       <h3>First Collection</h3>
@@ -35,23 +37,23 @@ export default function FirstCollection () {
             </article>
           </Grid>
           <div className='hover-grid'>
-            <article className='hidden-mb'>
+            <article onClick={() => navigate('/green')} className='hidden-mb'>
               <h3>Green$</h3>
               <div />
             </article>
-            <article>
+            <article onClick={() => navigate('/djgrill')}>
               <h3>Dj Grill$</h3>
               <div />
             </article>
-            <article className='middle'>
+            <article onClick={() => navigate('/thegeneral')} className='middle'>
               <h3>The general</h3>
               <div />
             </article>
-            <article >
+            <article onClick={() => navigate('/mcdollar')} >
               <h3>MC Dollar$</h3>
               <div />
             </article>
-            <article className='hidden-mb'>
+            <article onClick={() => navigate('/hitman')} className='hidden-mb'>
               <h3>Hitman$</h3>
               <div />
             </article>

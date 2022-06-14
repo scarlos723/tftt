@@ -18,6 +18,11 @@ import '@/styles/App.css'
 import { useEffect, useState } from 'react'
 import ErrorPage from './pages/ErrorPage'
 import Dashboard from './pages/Dashboard'
+import TheGeneral from './pages/TheGeneral'
+import Green from './pages/Green'
+import DjGrill from './pages/DjGrill'
+import McDollar from './pages/McDollar'
+import Hitman from './pages/Hitman'
 
 function App () {
   const [gradient, setGradient] = useState(false)
@@ -48,8 +53,12 @@ function App () {
         <Route path='/filmcoin' element={<Filmcoin />} />
         <Route path='/errorpage' element={<ErrorPage />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/theGeneral' element={<TheGeneral />} />
+        <Route path='/green' element={<Green />} />
+        <Route path='/djgrill' element={<DjGrill />} />
+        <Route path='/mcdollar' element={<McDollar />} />
+        <Route path='/hitman' element={<Hitman />} />
       </Routes>
-
       <Footer/>
     </BrowserRouter>
   )

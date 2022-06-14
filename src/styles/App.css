@@ -36,6 +36,18 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+.style-border-gold{
+  background: -webkit-linear-gradient(90deg, #DA9413 -15.82%, #FEF1B2 46.06%, #753B03 115.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(107, 113, 70, 0);
+}
+
+.bg-pos-x-50{
+  background-position-x: 60px !important;
+}
+
 @media only screen and (min-width: 768px) {
   .custom-btn{
     font-size: 15px;

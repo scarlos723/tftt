@@ -105,6 +105,7 @@ export const Box = styled.div`
       display: none;
     }
     article{
+      cursor: pointer;
       h3{
         padding: 0;
         opacity: 0;

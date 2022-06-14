@@ -11,7 +11,7 @@ import {
 import { useNavigate } from 'react-router-dom'
 import LogoTFTT from '@/logos/logoTFTT'
 
-export default function TopDrops() {
+export default function TopDrops () {
   const navigate = useNavigate()
   return (
     <Container>
