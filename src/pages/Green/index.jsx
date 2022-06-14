@@ -5,10 +5,13 @@ import bgImgFooter from '../../assets/images/greenLanding/footer.png'
 import GorillasLanding from '../../components/GorillasLanding'
 
 export default function Green () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const dataInfo = {
     isGeneral: false,
     halloColor: '#3FC542',
-    nameGorilla: 'green',
+    nameGorilla: 'Green',
     subtitle: 'The Herbal Supplier',
     description: ' ',
     about: 'Marijuana smoking troop leader, he’s always intoxicated and keeps a close eye on his crew, he’s hypercritical and will diss everything they do…….he needs to be noticed, he calls the shots and his troop know that.',
@@ -26,9 +29,9 @@ export default function Green () {
     ],
     relSigns: ['taurus', 'virgo', 'capricorn'],
     gridText: {
-      redText: '2x vip',
-      whiteText: '“all expences paid”',
-      parragraph: 'Day passes to the TFTT movie Production set, reserved seating to watch the team in action, meet the director and cast. And the ticket for the day passes art.',
+      redText: 'Meet the directors ',
+      whiteText: 'on a Zoom Call',
+      parragraph: 'A Zoom Call with the Directors of the Movie, get to ask direct questions and talk to the directors one on one.',
       quantity: 100
     },
     images: {

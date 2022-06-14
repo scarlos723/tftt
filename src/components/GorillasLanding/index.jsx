@@ -19,7 +19,8 @@ export default function GorillasLanding ({ dataInfo }) {
       >
         <div>
           <article />
-          <div className={dataInfo.isGeneral ? 'gorilla-img' : 'gorilla-img bg-pos-x-50'} />
+          <div
+            className={(dataInfo.nameGorilla === 'Green' || dataInfo.nameGorilla === 'Dj Grill') ? 'gorilla-img bg-pos-x-50' : 'gorilla-img'} />
         </div>
       </BannerContainer>
 
@@ -101,7 +102,7 @@ export default function GorillasLanding ({ dataInfo }) {
 
         </AboutSection>
       }
-      <GridSection isTheGeneral={true}>
+      <GridSection isGeneral={dataInfo.isGeneral}>
         <div className='grid'>
 
           <div className='text-box'>

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-
+import { ResponsiveTo } from '../../hooks/useResponsive'
 export const BannerContainer = styled.section`
   display: grid;
   place-content: center;
@@ -9,47 +9,79 @@ export const BannerContainer = styled.section`
   background-size: auto, cover;
   background-position-x: center;
   background-position-y: center, bottom;
-  height: 853.12px;
+  height: 453.12px;
   div{
-    width: 599px;
-    height: 649px;
+    width: 299px;
+    height: 349px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     position: relative;
     article{
-      width: 599px;
-      height: 599px;
+      width: 299px;
+      height: 299px;
       border-radius: 50%;
-      border: 100px solid ${props => props.color};
+      border: 50px solid ${props => props.color};
       mix-blend-mode: screen;
       position: absolute;
       top: 0;
     }
     .gorilla-img{
       position: relative;
-      margin-top: auto;
-      width: 565px;
-      height: 574px;
+      top: 0;
+      width: 265px;
+      height: 274px;
       background: url(${props => props.gorilla});
       background-repeat: no-repeat;
-      background-size: auto;
-      background-position-x:center;
+      background-size: 100%;
+      background-position-x: center;
+    }
+  }
+  ${ResponsiveTo('lg')}{
+    height: 853.12px;
+    div{
+      width: 599px;
+      height: 649px;
+      article{
+        width: 599px;
+        height: 599px;
+        border: 100px solid ${props => props.color};
+      }
+      .gorilla-img{
+        width: 565px;
+        height: 574px;
+        background-size: auto;
+      }
     }
   }
 `
 export const Title = styled.div`
+  padding: 0 30px;
   h2{
     display: flex;
     flex-direction: row ;
     align-items: center;
     justify-content: center;
-    font-size: 65px;
+    font-size: 30px;
     img{
       position: relative;
-      top: -2px;
-      width: 41px;
-      height: 63px;
+      top: -1px;
+      width: 32px;
+      height: 36px;
+    }
+  }
+  p{
+    font-size: 16px;
+  }
+  ${ResponsiveTo('lg')}{
+    padding: 0;
+    h2{
+      font-size: 65px;
+      img{
+        top: -2px;
+        width: 41px;
+        height: 63px;
+      }
     }
   }
 `
@@ -64,17 +96,27 @@ export const GridSection = styled.section`
   display: grid;
   place-content: center;
   margin-top: 216px;
+  padding: 0 30px;
   .grid{
     max-width: 849px;
-    display: grid;
-    grid-template-columns: 599px 241px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .text-box{
     h2,p{
-      text-align: left;
+      text-align: center;
     }
     h2{
-      font-size: 65px;
+      ${props => props.isGeneral
+    ? css`
+        font-size: 30px;
+        `
+    : css`
+        font-size: 25px;
+        `
+}   
+      
     }
     p{
       font-size: 16px;
@@ -104,7 +146,34 @@ export const GridSection = styled.section`
     h2{
       font-size: 50px;
     }
-  `
+    h3{
+      font-size: 20px;
+    }
+  ${ResponsiveTo('lg')}{
+    padding: 0;
+    .grid{
+      max-width: 849px;
+      display: grid;
+      grid-template-columns: 599px 241px;
+      gap: 22px;
+    }
+    .text-box{
+      h2,p{
+        text-align: left;
+      }
+      h2{
+      ${props => props.isGeneral
+    ? css`
+        font-size: 65px;
+        `
+    : css`
+        font-size: 55px;
+        `
+}   
+      }
+    }
+  } 
+`
 
 export const FootBanner = styled.section`
   display: grid;
@@ -120,7 +189,7 @@ export const FootBanner = styled.section`
 `
 
 export const AboutSection = styled.section`
-  max-width: 849px;
+  padding: 0 30px;
   margin: 0 auto;
   display: grid;
   gap: 32px;
@@ -135,6 +204,10 @@ export const AboutSection = styled.section`
   }
   h5{
     font-family: 'Cooper Hewitt';
+  }
+  h3{
+    font-size: 20px;
+    margin-top:16px;
   }
   .grid{
     display: grid;
@@ -155,5 +228,12 @@ export const AboutSection = styled.section`
       place-items: center;
       gap: 16px;
     }
+  }
+  ${ResponsiveTo('lg')}{
+    padding: 0;
+    max-width: 849px;
+    margin: 0 auto;
+    display: grid;
+    gap: 32px;
   }
 `

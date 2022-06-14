@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import bgBanner from '../../assets/images/hitmanLanding/banner.png'
 import gorillaImg from '../../assets/images/hitmanLanding/gorilla.png'
 import bgImgFooter from '../../assets/images/hitmanLanding/footer.png'
 import GorillasLanding from '../../components/GorillasLanding'
 
 export default function Hitman () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const dataInfo = {
     isGeneral: false,
     halloColor: 'rgba(252, 13, 13, 0.9)',

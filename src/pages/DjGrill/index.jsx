@@ -11,7 +11,7 @@ export default function DjGrill () {
   const dataInfo = {
     isGeneral: false,
     halloColor: 'rgba(0, 102, 190, 0.9)',
-    nameGorilla: 'dj grill',
+    nameGorilla: 'Dj Grill',
     subtitle: 'The MixMaster',
     description: ' ',
     about: `DjGrill$ He’s a club Legend with a cult following, 
