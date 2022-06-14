@@ -210,8 +210,8 @@ export const AboutSection = styled.section`
     margin-top:16px;
   }
   .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     li{
       list-style: disc;
       margin-left: 16px;
@@ -227,6 +227,12 @@ export const AboutSection = styled.section`
       place-content: center;
       place-items: center;
       gap: 16px;
+    }
+  }
+  ${ResponsiveTo('md')}{  
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
   ${ResponsiveTo('lg')}{
