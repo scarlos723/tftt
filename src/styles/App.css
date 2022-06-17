@@ -32,8 +32,15 @@
   -webkit-text-stroke-color: rgba(241, 5, 5, 1);
 }
 .style-border-white{
+  font-weight: bolder;
   color: black;
   -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.style-border-white-1{
+  font-weight: bolder;
+  color: black;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .style-border-gold{

@@ -28,7 +28,7 @@ export default function GorillasLanding ({ dataInfo }) {
       <SectionText id='about'>
         <Title>
           <h2>Meet  &nbsp;
-            <span className={dataInfo.isGeneral ? 'style-border-gold' : 'style-border-white'}>
+            <span className={dataInfo.isGeneral ? 'style-border-gold' : 'style-border-white-1'}>
               {dataInfo.nameGorilla}
             </span> {!dataInfo.isGeneral && <img src={signTitle} alt="sign dollar" /> }
           </h2>
@@ -84,7 +84,7 @@ export default function GorillasLanding ({ dataInfo }) {
             </div>
 
           </div>
-          <div>
+          <div className='signs-section'>
             <h5>Related Star Signs</h5>
 
             <div className='signs-box'>

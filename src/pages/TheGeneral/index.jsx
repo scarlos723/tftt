@@ -20,7 +20,7 @@ export default function TheGeneral () {
     gridText: {
       redText: '2x vip',
       whiteText: '“all expences paid”',
-      middleRedText: 'screening',
+      middleRedText: ' ',
       parragraph: 'Day passes to the TFTT movie Production set, reserved seating to watch the team in action, meet the director and cast. And the ticket for the day passes art.',
       quantity: 1
     },

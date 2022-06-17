@@ -14,7 +14,7 @@ export default function DjGrill () {
     nameGorilla: 'Dj Grill',
     subtitle: 'The MixMaster',
     description: ' ',
-    about: `DjGrill$ He’s a club Legend with a cult following, 
+    about: `He’s a club Legend with a cult following, 
     he’s honest as the days long and loves to mix his urban 
     beats in front of his faithful troop. His overjealous 
     imagination can run wild but when he’s spinning his very own ear candy, 

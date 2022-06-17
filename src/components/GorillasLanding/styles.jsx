@@ -92,6 +92,7 @@ export const Title = styled.div`
     flex-direction: row ;
     align-items: center;
     justify-content: center;
+    letter-spacing: 0rem;
     font-size: 30px;
     img{
       position: relative;
@@ -125,7 +126,15 @@ export const SectionText = styled.section`
 export const GridSection = styled.section`
   display: grid;
   place-content: center;
-  margin-top: 216px;
+  ${props => props.isGeneral
+    ? css`
+      margin-top: 216px;
+      `
+    : css`
+      margin-top: 148px;
+      `
+}   
+
   padding: 0 30px;
   .grid{
     max-width: 849px;
@@ -191,16 +200,22 @@ export const GridSection = styled.section`
       h2,p{
         text-align: left;
       }
-      h2{
       ${props => props.isGeneral
     ? css`
-        font-size: 65px;
+        h2{
+          font-size: 65px;
+        } 
         `
     : css`
-        font-size: 55px;
+        h2{
+          font-size: 55px;
+        } 
+        p{
+          margin-top: 17px;
+        }
         `
-}   
-      }
+
+}
     }
   } 
 `
@@ -234,6 +249,8 @@ export const AboutSection = styled.section`
   }
   h5{
     font-family: 'Cooper Hewitt';
+    margin: 0;
+    margin-bottom: 4px;
   }
   h3{
     font-size: 20px;
@@ -242,11 +259,19 @@ export const AboutSection = styled.section`
   .grid{
     display: flex;
     flex-direction: column;
+    h5{
+      margin-bottom: 28px;
+    }
     li{
       list-style: disc;
       margin-left: 16px;
       font-weight: 300;
       
+    }
+  }
+  .signs-section{
+    h5{
+      margin-bottom: 48px;
     }
   }
   .signs-box{
