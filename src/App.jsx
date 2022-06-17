@@ -23,7 +23,7 @@ import Hitman from './pages/Hitman'
 import TfttApp from '@/containers/TfttApp'
 import FirstCollection from '@/containers/FirstCollection'
 
-function App() {
+function App () {
   const [gradient, setGradient] = useState(false)
   useEffect(() => {
     document.addEventListener('scroll', e => {

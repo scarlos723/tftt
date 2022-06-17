@@ -38,18 +38,48 @@ export const BannerContainer = styled.section`
     }
   }
   ${ResponsiveTo('lg')}{
-    height: 853.12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 856px;
+      margin-bottom: 95px;
     div{
-      width: 599px;
-      height: 649px;
+      ${props => props.isGeneral
+    ? css`
+        width: 599px;
+        height: 649px;
+      `
+    : css`
+        width: 527px;
+        height: 562px;
+      `}
+    
       article{
+        ${props => props.isGeneral
+    ? css`
         width: 599px;
         height: 599px;
         border: 100px solid ${props => props.color};
+      `
+    : css`
+        width: 508px;
+        height: 508px;
+        border: 85px solid ${props => props.color};
+      `}
+      
+        
       }
       .gorilla-img{
+        ${props => props.isGeneral
+    ? css`
         width: 565px;
         height: 574px;
+      `
+    : css`
+        width: 520px;
+        height: 489px;
+      `}
         background-size: auto;
       }
     }

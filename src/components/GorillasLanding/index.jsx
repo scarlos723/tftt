@@ -16,11 +16,12 @@ export default function GorillasLanding ({ dataInfo }) {
         bgImg ={dataInfo.images.banner}
         gorilla={dataInfo.images.gorilla}
         color={dataInfo.halloColor}
+        isGeneral={dataInfo.isGeneral}
       >
         <div>
           <article />
           <div
-            className={(dataInfo.nameGorilla === 'Green' || dataInfo.nameGorilla === 'Dj Grill') ? 'gorilla-img bg-pos-x-50' : 'gorilla-img'} />
+            className={(dataInfo.nameGorilla === 'Green') ? 'gorilla-img bg-pos-x-50' : 'gorilla-img'} />
         </div>
       </BannerContainer>
 
