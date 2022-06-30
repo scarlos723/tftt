@@ -12,7 +12,7 @@ export default function Marketplace () {
     <div>
       <Seo title='Marketplace' />
       <BannerMarket />
-      <h2>TFT<span>T</span> COLLECTION</h2>
+      <h2>TFT<span>T</span> COLLECTIONS</h2>
       <FirstCollection />
       <TopDrops />
     </div>

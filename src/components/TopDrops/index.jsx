@@ -30,7 +30,7 @@ export default function TopDrops () {
         </CardsContainer>
       </Section>
       <TextBox>
-        <h3><span>Don’t miss any detail!</span></h3>
+        <h3><span>Don’t miss any details!</span></h3>
         <p>Register now on our whitelist and stay tuned for
           the launch of our first <span>NFT</span> collection</p>
         <button

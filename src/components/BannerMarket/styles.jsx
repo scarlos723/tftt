@@ -41,6 +41,9 @@ export const TextSection = styled.section`
     margin-top: 20%;
   }
   ${ResponsiveTo('xl')}{
+    h1{
+      font-size: 65px;
+    }
     max-width: 677px;
   }
 `
