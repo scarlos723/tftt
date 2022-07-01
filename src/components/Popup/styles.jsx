@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import bgImg from '../../assets/images/popup/bgPopup.png'
+import bgImg2 from '../../assets/images/popup/bgPopup2.png'
 import closeIcon from '../../assets/icons/closeIconPopup.svg'
 import { ResponsiveTo } from '../../hooks/useResponsive'
-import gorillas from '../../assets/images/popup/gorillas.png'
-
 
 export const Container = styled.div`
   display: flex;
@@ -17,15 +16,16 @@ export const Container = styled.div`
 `
 export const Section = styled.section`
   width: 90%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background:url(${bgImg}), #000000;
+  background:url(${bgImg2}), url(${bgImg}), #000000;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain,  cover;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y:bottom, center;
   position: relative;
   padding: 40px 20px;
   border-radius: 20px;
@@ -47,6 +47,7 @@ export const Section = styled.section`
 
   ${ResponsiveTo('md')}{
     max-width: 550px;
+    height: 470px;
     padding: 80px 40px;
     button{
       max-width: 428px;
@@ -54,8 +55,8 @@ export const Section = styled.section`
   }
   ${ResponsiveTo('lg')}{
     max-width: 848px;
-    height: 545px;
-    padding: 38px 100px 62px 100px;
+    height: 669px;
+    padding: 93px 72px 62px 72px;
     button{
       max-width: 476px;
     }
@@ -69,35 +70,41 @@ export const Section = styled.section`
 export const Text = styled.div`
   position: relative;
   z-index: 1;
-  display: grid;
-  margin-bottom: 50px;
-  gap: 22px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+
   h2 {
     // Highlight white text on black background
+    font-size: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
   h3 {
-    font-size: 25px;
+    font-size: 12px;
   }
-`
-export const Image = styled.img.attrs({
-  src: gorillas,
-  role: 'presentation',
-  alt: 'Gorillas NFTs Collection'
-})`
-  margin-bottom: -0.4rem;
-  z-index: 0;
-  width: 200px;
-  height: auto;
+  div{
+    display: grid;
+    place-items: center;
+  }
   ${ResponsiveTo('md')}{
-    width: 420px;
-    margin-bottom: -2.2rem;
+    h2 {
+      // Highlight white text on black background
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 16px;
+    }
   }
   ${ResponsiveTo('lg')}{
-    width: 476px;
-  }
-  ${ResponsiveTo('xl')}{
-    width: 620px;
-    margin-bottom: -3.3rem;
+    h2 {
+      // Highlight white text on black background
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 25px;
+    }
   }
 `

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import bgImg from '../../assets/images/minipopup/bgMiniPopup.png'
+import bgImg2 from '../../assets/images/minipopup/bgGeneral.png'
+import bgImg3 from '../../assets/images/popup/bgPopup2.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 
 export const Container = styled.div`
@@ -7,34 +9,37 @@ export const Container = styled.div`
   z-index: 10;
   right: 20px;
   bottom: 80px;
-  display: grid;
-  place-content: center;
-  background-image: url(${bgImg}) ;
+  background-image:url(${bgImg2}), url(${bgImg}) ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain,cover;
   background-position-x: center;
-  background-position-y: top;
-  padding: 8px 0 12px 0;
+  background-position-y: bottom, top;
+  padding: 12px 8px 8px 8px;
   width: 117px;
-  height: auto;
+  height: 144px;
   border-radius: 8px;
   section{
-    display: grid;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    div{
+      display: grid;
+      place-content: center;
+    }
   }
-  .gorilla-img{
-    width: 91.81px;
-    height: 93px;
-    margin-left: 20px;
-    margin-bottom: -40px;
-  }
-  .gorilla-group{
-    display: none;
-  }
+  
   h3{
-    font-size: 13px;
+    font-size: 6px;
     br{
       display: none;
     }
+  }
+  h2{
+    font-size: 10px;
   }
   button{
     font-size: 10px;
@@ -47,50 +52,29 @@ export const Container = styled.div`
   }
   ${ResponsiveTo('md')}{
     width: 209px;
-    height: 120px;
+    height: 170px;
     padding:16px 0;
-    .gorilla-img{
-      display: none;
-      
-    }
-    .gorilla-group{
-      display: block;
-      width: 164.11px;
-      height: 78px;
-      margin: 0 auto;
-      margin-bottom: -20px;
-    }
+    background-image:url(${bgImg3}), url(${bgImg}) ;
+    background-repeat: no-repeat;
+    background-size:contain,cover;
+    background-position-x: center;
+    background-position-y: bottom, top;
     h3{
-      font-size: 15px;
+      font-size: 8px;
     }
     button{
       width: 148px;
       font-size: 12px;
     }
   }
-  
-  ${ResponsiveTo('xl')}{
+  ${ResponsiveTo('lg')}{
     width: 229px;
-    height: 157px;
-    .gorilla-img{
-      width: 89px;
-      height: 93px;
-    }
-    .gorilla-group{
-      width: 195.67px;
-      height: 93px;
-     
-      margin-bottom: -40px;
+    height: 191px;
+    h2{
+      font-size: 15px;
     }
     h3{
-      font-size: 20px;
-      br{
-        display: block;
-      }
+      font-size: 10px;
     }
-    button{
-    
-      width: 168px;
-    } 
   }
 `
