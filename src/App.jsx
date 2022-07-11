@@ -22,6 +22,8 @@ import McDollar from './pages/McDollar'
 import Hitman from './pages/Hitman'
 import TfttApp from '@/containers/TfttApp'
 import FirstCollection from '@/containers/FirstCollection'
+import Payment1 from './pages/Payment1'
+import Payment2 from './pages/Payment2'
 
 function App () {
   const [gradient, setGradient] = useState(false)
@@ -51,6 +53,8 @@ function App () {
           <Route path='filmcoin' element={<Filmcoin />} />
           <Route path='errorpage' element={<ErrorPage />} />
           <Route path='dashboard' element={<Dashboard />} />
+          <Route path='payment1' element={<Payment1 />} />
+          <Route path='payment2' element={<Payment2 />} />
         </Route>
         {/* Expected to have a /collection route parent in the future */}
         <Route path='/first-collection' element={<FirstCollection />}>
