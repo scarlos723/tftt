@@ -10,11 +10,10 @@ export default function Popup (props) {
 
         <Text>
           <h3>
-          Be one of the first to own a
+            <i>Be one of the first to own a</i>
           </h3>
           <div>
-            <h3>FROM OUR</h3>
-            <h2><span>Exclusive</span> nft collection</h2>
+            <h3><i>FROM OUR<span className='style-border-white-transparent'>Exclusive</span> nft collection</i></h3>
             <button onClick={() => navigate('/register')} className='custom-btn'>Register</button>
           </div>
 

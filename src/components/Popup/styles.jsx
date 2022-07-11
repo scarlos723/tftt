@@ -21,13 +21,13 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background:url(${bgImg2}), url(${bgImg}), #000000;
+  background:url(${bgImg});
   background-repeat: no-repeat;
-  background-size: contain,  cover;
+  background-size: cover;
   background-position-x: center;
-  background-position-y:bottom, center;
+  background-position-y:top;
   position: relative;
-  padding: 40px 20px;
+  padding: 20px;
   border-radius: 20px;
   button{
     width: 100%;
@@ -48,7 +48,7 @@ export const Section = styled.section`
   ${ResponsiveTo('md')}{
     max-width: 550px;
     height: 470px;
-    padding: 80px 40px;
+    padding: 30px 40px;
     button{
       max-width: 428px;
     }
@@ -56,13 +56,14 @@ export const Section = styled.section`
   ${ResponsiveTo('lg')}{
     max-width: 848px;
     height: 669px;
-    padding: 93px 72px 62px 72px;
+    padding: 53px 72px 62px 72px;
     button{
       max-width: 476px;
     }
   }
   ${ResponsiveTo('xl')}{
     button{
+      
       max-width: 631px;
     }
   }
@@ -84,6 +85,7 @@ export const Text = styled.div`
   }
   h3 {
     font-size: 12px;
+    
   }
   div{
     display: grid;

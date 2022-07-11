@@ -37,6 +37,12 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+.style-border-white-transparent{
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
 .style-border-white-1{
   font-weight: bolder;
   color: black;

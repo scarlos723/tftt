@@ -12,7 +12,7 @@ export default function MiniPopup () {
           <h3>From our</h3>
           <h2><span>EXCLUSIVE</span>NFT COLLECTION</h2>
           <button onClick={() => navigate('/register')} className='custom-btn'>
-          MINT NOW
+            Register
           </button>
         </div>
 
