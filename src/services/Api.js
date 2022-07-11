@@ -17,7 +17,7 @@ export async function sendContactInfo (data) {
     phone: data.phone || '0000000',
     address: data.address || 'street',
     // Default values
-    city: 'NaN',
+    city: 'TFTT',
     country: 'A',
     kycDocumnet: null,
     province: 'B',
