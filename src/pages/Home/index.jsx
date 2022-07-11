@@ -7,8 +7,8 @@ import Synopsis from '../../components/Synopsis'
 import StepInto from '../../components/StepInto'
 import VideoSection from '../../components/VideoSection'
 import Seo from '../../components/Seo'
-import OurWhiteList from '../../components/OurWhiteList'
-export default function Home () {
+import MintSection from '@/components/MintSection'
+export default function Home() {
   const [showPopup, setShowPopup] = useState(true)
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -21,7 +21,7 @@ export default function Home () {
         showPopup && <Popup setShowPopup={setShowPopup} />
       }
       <BannerHome />
-      <OurWhiteList />
+      <MintSection />
       <VideoSection />
       <Synopsis />
       <BeInTheFilm />
