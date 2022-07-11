@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import bgImg from '../../assets/images/popup/bgPopup.png'
-import bgImg2 from '../../assets/images/popup/bgPopup2.png'
 import closeIcon from '../../assets/icons/closeIconPopup.svg'
 import { ResponsiveTo } from '../../hooks/useResponsive'
 
