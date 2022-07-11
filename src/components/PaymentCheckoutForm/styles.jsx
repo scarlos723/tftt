@@ -45,7 +45,7 @@ export const Title = styled.h2`
   text-align: left;
   em {
     font-style: normal;
-    color: #12D466;
+    color: #801a13;
   }
   ${ResponsiveTo('420px')} {
     font-size: 20px;
@@ -56,7 +56,7 @@ export const Title = styled.h2`
 
 export const Input = styled.input`
   width: 100%;
-  border: 0.5px solid #12D466;
+  border: 0.5px solid #801a13;
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   color: white;
@@ -124,8 +124,8 @@ export const Button = styled.button`
       border: 1.5px solid #9EA8BD;
     `
     : css`
-      background: rgba(0, 146, 66, 0.3);
-      border: 1.5px solid #12D466;
+      background: rgba(146, 0, 0, 0.3);
+      border: 1.5px solid #801a13;
     `
 }
   ${ResponsiveTo('768px')} {

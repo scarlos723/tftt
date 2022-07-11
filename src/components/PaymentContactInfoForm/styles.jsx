@@ -10,7 +10,7 @@ export const Section = styled.section`
   padding: 2rem 0 4rem;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 10%),
-                    radial-gradient(160.04% 99.81% at 174.35% 65.65%, rgba(10, 128, 61, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+                    radial-gradient(160.04% 99.81% at 174.35% 65.65%, rgba(128, 10, 10, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
   background-size: cover;
   background-position: 30% center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ export const Section = styled.section`
     
     padding: 4rem 0 8rem;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 20%),
-                      radial-gradient(160.04% 99.81% at 174.35% 65.65%, rgba(10, 128, 61, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+                      radial-gradient(160.04% 99.81% at 174.35% 65.65%, rgba(128, 10, 10, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
   }
 `
 
@@ -175,7 +175,7 @@ export const Button = styled.button`
       border: 1.5px solid #9EA8BD;
     `
     : css`
-      background: rgba(0, 146, 66, 0.3);
+      background: rgba(146, 0, 0, 0.3);
       border: 1.5px solid #801a13;
     `
 }
