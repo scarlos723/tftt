@@ -27,8 +27,8 @@ const CheckoutForm = (props) => {
       setLoading(true)
       const { id } = paymentMethod // Extract id transaction
       try {
-        const apiUrl = '/api/testStripe' // Test api
-        // const apiUrl = '/api/StripeTransaction'
+        // const apiUrl = '/api/testStripe' // Test api
+        const apiUrl = '/api/StripeTransaction'
         const response = await axios.post(`${baseURLApi}${apiUrl}`,
           {
             orderID: id,
