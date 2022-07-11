@@ -41,18 +41,18 @@ const CheckoutForm = (props) => {
           if (response.data.message === 'Payment successfull') {
             navigate('/success')
           } else {
-            navigate('/errorpage')
+            navigate('/error-payment')
           }
         }
       } catch (errorcatch) {
         setLoading(false)
-        navigate('/error')
+        navigate('/error-payment')
         console.log('Error Catch: ', errorcatch)
         console.log('Error: ', error)
       }
     } else {
       setLoading(false)
-      navigate('/error')
+      navigate('/error-payment')
       console.log('Error:', error)
     }
   }

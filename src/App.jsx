@@ -24,6 +24,7 @@ import TfttApp from '@/containers/TfttApp'
 import FirstCollection from '@/containers/FirstCollection'
 import Payment1 from './pages/Payment1'
 import Payment2 from './pages/Payment2'
+import ErrorPayment from './pages/ErrorPayment'
 
 function App () {
   const [gradient, setGradient] = useState(false)
@@ -55,6 +56,7 @@ function App () {
           <Route path='dashboard' element={<Dashboard />} />
           <Route path='payment1' element={<Payment1 />} />
           <Route path='payment2' element={<Payment2 />} />
+          <Route path='error-payment' element={<ErrorPayment />} />
         </Route>
         {/* Expected to have a /collection route parent in the future */}
         <Route path='/first-collection' element={<FirstCollection />}>

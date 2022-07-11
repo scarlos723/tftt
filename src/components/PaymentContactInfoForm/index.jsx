@@ -34,7 +34,7 @@ function PaymentContactInfoForm () {
         navigate(`/payment2/?token=${response.token}`)
       }
     } catch (error) {
-      window.alert('Error sending contact info. Please try again later.')
+      navigate('/error-payment')
       console.log(error)
     }
   }
