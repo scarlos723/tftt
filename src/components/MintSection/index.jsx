@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Container, Image } from './styles'
 
-function MintSection() {
+function MintSection () {
   return (
     <Container>
       <Image />
-      <Button to='/'>
-        mint now
+      <Button to='/register'>
+        register now
       </Button>
     </Container>
   )
