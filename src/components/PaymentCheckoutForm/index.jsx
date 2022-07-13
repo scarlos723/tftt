@@ -1,31 +1,51 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-// Components
 
 // Styles
 import { Section, Container, Contain, TotalContainer, Button, ButtonsContainer } from './styles'
 // Form
 
 import StripeButton from '../StripeButton'
+import { getPriceETH } from '../../services/apiCoingecko'
 
 export default function PaymentCheckoutForm () {
   const location = useLocation()
   const navigate = useNavigate()
-
   const [transactionToken, setTransactionToken] = useState('')
-
-  const total = (230).toFixed(2)
+  // eslint-disable-next-line no-unused-vars
+  const [priceETH, setPriceETH] = useState(0)
+  const [total, setTotal] = useState(0)
+  const valueNFT = 0.2 // ETH
 
   useEffect(() => {
     const params = new URLSearchParams(location.search)
     const q = params.get('token')
     setTransactionToken(q)
+    calcTotal()
   }, [])
+
+  async function calcTotal () {
+    try {
+      const dataEth = await getPriceETH()
+      if (dataEth) {
+        console.log(dataEth.market_data.current_price.usd)
+        setPriceETH(dataEth.market_data.current_price.usd)
+        setTotal(
+          (dataEth.market_data.current_price.usd * valueNFT).toFixed(2)
+        )
+      } else {
+        console.log('Error in data ETH', dataEth)
+      }
+    } catch (error) {
+      console.log('Try fetch erro:', error)
+    }
+  }
 
   return (
     <Section>
       <Container>
         <Contain noValidate>
+
           <TotalContainer>
             <p>Payment total</p>
             <p>USD {total}</p>
