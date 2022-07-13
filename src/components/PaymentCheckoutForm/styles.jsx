@@ -29,6 +29,7 @@ export const Contain = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   .info-coingecko{
     p{
       span{
@@ -103,7 +104,6 @@ export const Error = styled.p`
 export const TotalContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0.75rem 0 4rem;
@@ -149,7 +149,6 @@ export const Button = styled.button`
 
 export const ButtonsContainer = styled.div`
   width: 100%;
-  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

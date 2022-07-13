@@ -72,8 +72,9 @@ export default function PaymentCheckoutForm () {
             <a href="https://www.coingecko.com/">Info powered by <span>Coingecko</span></a>
           </div>
           <TotalContainer>
-            <p>Payment total</p>
-            <p>USD {total}</p>
+            <p>NFT price</p>
+
+            <p>ETH {valueNFT} / USD {total} </p>
           </TotalContainer>
         </Contain>
         <ButtonsContainer>
