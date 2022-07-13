@@ -44,7 +44,7 @@ function PaymentContactInfoForm () {
       <Section>
         <Container>
           <Form onSubmit={handleSubmit(onSubmitHandler)} noValidate>
-            <Title>Contact Information</Title>
+            <Title>Confirm your information</Title>
             <div>
               <Label htmlFor='email' required>Contact Mail</Label>
               <Input
@@ -75,11 +75,11 @@ function PaymentContactInfoForm () {
             </div>
 
             <div>
-              <Label htmlFor='address'>Address</Label>
+              <Label htmlFor='wallet'>Wallet Address</Label>
               <Input
                 type='text'
-                placeholder='Enter address'
-                {...register('address')}
+                placeholder='Enter wallet address'
+                {...register('wallet')}
               />
             </div>
 

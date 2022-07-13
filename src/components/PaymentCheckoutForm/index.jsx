@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 // Styles
@@ -7,6 +7,7 @@ import { Section, Container, Contain, TotalContainer, Button, ButtonsContainer }
 
 import StripeButton from '../StripeButton'
 import { getPriceETH } from '../../services/apiCoingecko'
+import { addMinutes, intervalToDuration } from 'date-fns'
 
 export default function PaymentCheckoutForm () {
   const location = useLocation()
@@ -24,11 +25,30 @@ export default function PaymentCheckoutForm () {
     calcTotal()
   }, [])
 
+  // counter
+  const counterRef = useRef(null)
+  useEffect(() => {
+    if (!counterRef.current) return
+    let futureTime = addMinutes(Date.now(), 3)
+    const interval = setInterval(() => {
+      const elapsedTime = intervalToDuration({
+        start: Date.now(),
+        end: futureTime
+      })
+      counterRef.current.innerHTML = `${elapsedTime.minutes}:${elapsedTime.seconds}`
+      if (elapsedTime.minutes === 0 && elapsedTime.seconds === 0) {
+        futureTime = addMinutes(Date.now(), 3)
+        calcTotal()
+        // Execute your code here
+      }
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [])
+
   async function calcTotal () {
     try {
       const dataEth = await getPriceETH()
       if (dataEth) {
-        console.log(dataEth.market_data.current_price.usd)
         setPriceETH(dataEth.market_data.current_price.usd)
         setTotal(
           (dataEth.market_data.current_price.usd * valueNFT).toFixed(2)
@@ -37,7 +57,7 @@ export default function PaymentCheckoutForm () {
         console.log('Error in data ETH', dataEth)
       }
     } catch (error) {
-      console.log('Try fetch erro:', error)
+      console.log('Try fetch ETH error:', error)
     }
   }
 
@@ -45,7 +65,12 @@ export default function PaymentCheckoutForm () {
     <Section>
       <Container>
         <Contain noValidate>
-
+          <div className='info-coingecko'>
+            <p>
+              ETH price: {priceETH}. <br /> The price will be reloaded every  3 minutes. (<span ref={counterRef} />)
+            </p>
+            <a href="https://www.coingecko.com/">Info powered by <span>Coingecko</span></a>
+          </div>
           <TotalContainer>
             <p>Payment total</p>
             <p>USD {total}</p>

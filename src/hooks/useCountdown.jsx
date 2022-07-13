@@ -27,8 +27,7 @@ export const useCountdown = () => {
 
       if (distance < 0) {
         // Stop Timer
-
-        clearInterval(interval.current)
+        clearInterval(interval)
       } else {
         // Update Timer
         setTimerDays(
@@ -46,10 +45,7 @@ export const useCountdown = () => {
   }
   useEffect(() => {
     startTimer()
-    return () => {
-      clearInterval(interval.current)
-    }
-  })
+  }, [])
   return (
     [
       { name: 'Days', value: timerDays },

@@ -31,7 +31,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 1rem;
   color: white;
-  margin-top: 100px;
+  
   ${ResponsiveTo('xs')} {
     padding: 0 3.25rem;
   }

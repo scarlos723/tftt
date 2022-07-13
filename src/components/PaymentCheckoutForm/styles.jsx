@@ -13,7 +13,6 @@ export const Section = styled.section`
     min-height: initial;
   }
   ${ResponsiveTo('1024px')} {
-   
     padding: 4rem 0 8rem;
   }
 `
@@ -23,7 +22,6 @@ export const Container = styled.div`
   padding: 0 1rem;
   color: white;
   max-width: 480px;
-  margin-top: 100px;
 `
 
 export const Contain = styled.section`
@@ -31,6 +29,22 @@ export const Contain = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  .info-coingecko{
+    p{
+      span{
+        color: white;
+      }
+    }
+    a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+    span{
+      color: #8dc647;
+    }
+    }
+  }
+ 
 `
 
 export const Title = styled.h2`
@@ -138,13 +152,17 @@ export const ButtonsContainer = styled.div`
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   div{
     width:100%;
   }
-  ${ResponsiveTo('400px')} {
+  ${ResponsiveTo('md')} {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 2rem;
+  }
+  ${ResponsiveTo('xl')} {
+    gap: 4rem;
   }
 `

@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import bgBanner from '@/images/register/banner.png'
+import bgBanner from '@/images/popupStayTuned/bgGraffiti.png'
 import { ResponsiveTo } from '../../hooks/useResponsive'
-
 export const BackgroundBanner = styled.section`
   display: grid;
   place-content: center;
   place-items: center;
   height: 219px;
-  background:url(${bgBanner});
+  background-image: url(${bgBanner});
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -15,5 +14,9 @@ export const BackgroundBanner = styled.section`
   
   ${ResponsiveTo('md')} {
     height: 419px;
+    background-size: contain;
+  }
+  ${ResponsiveTo('xl')} {
+    background-position-y: center;
   }
 `

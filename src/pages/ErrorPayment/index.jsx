@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 
 import Seo from '@/components/Seo'
-import BannerResponse from '../../components/BannerResponse'
 import ErrorCardPayment from '../../components/ErrorCardPayment'
+import { BackgroundBanner } from './styles'
 
 export default function ErrorPayment () {
   useEffect(() => {
@@ -13,7 +13,9 @@ export default function ErrorPayment () {
       <Seo
         title="Error Payment"
       />
-      <BannerResponse />
+      <BackgroundBanner>
+        <h2>Payment</h2>
+      </BackgroundBanner>
       <ErrorCardPayment />
     </main>
   )
