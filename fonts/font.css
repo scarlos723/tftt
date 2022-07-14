@@ -7,23 +7,6 @@
 }
 
 @font-face {
-  font-family: "monument_extendedregular";
-  src: url("../fonts/monumentextended-regular-webfont.woff2") format("woff2"),
-    url("../fonts/monumentextended-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "monument_extendedultrabold";
-  src: url("../fonts/monumentextended-ultrabold-webfont.woff2") format("woff2"),
-    url("../fonts/monumentextended-ultrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
   font-family: "cooper hewitt";
   src: url("../fonts/cooperhewitt-bold-webfont.woff2") format("woff2"),
     url("../fonts/cooperhewitt-bold-webfont.woff") format("woff");
@@ -132,19 +115,5 @@
   src: url("../fonts/cooperhewitt-thinitalic-webfont.woff2") format("woff2"),
     url("../fonts/cooperhewitt-thinitalic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monument Extended";
-  src: url("../fonts/MonumentExtended-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monument Extended Bold";
-  src: url("../fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
-  font-weight: bolder;
   font-style: normal;
 }

@@ -156,7 +156,7 @@ export const Error = styled.p`
 
 export const Button = styled.button`
   width: 100%;
-  font-family: 'Monument Extended', sans-serif;
+  font-family: 'Cooper Hewitt', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14.59px;
